@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:lighten($bg,10%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+    outline: 0;
+  }
+  &:focus {
+    outline: 0;
+  }
+}

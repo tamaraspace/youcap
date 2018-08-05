@@ -1,0 +1,73 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Copy text color
+// /// @type Color
+// $text-color: rgb(34, 34, 34) !default;
+
+/// Main brand color
+// /// @type Color
+// $brand-color: rgb(229, 0, 80) !default;
+
+/// Light grey
+// /// @type Color
+// $light-grey: rgb(237, 237, 237) !default;
+
+/// Medium grey
+// / @type Color
+// $mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+// / @type Color
+// $dark-grey: rgb(68, 68, 68) !default;
+
+/// @type Color
+$theme-purple: rgb(161,130,195) !default;
+
+/// @type Color
+$dark-purple: rgb(113,85,146) !default;
+
+/// @type Color
+$light-purple: rgb(211,178,246) !default;
+
+/// @type Color
+$light-blue: rgb(132,229,252) !default;
+
+/// @type Color
+$white: rgb(255,255,255) !default;
+
+/// @type Color
+$white-2: rgb(253,245,253) !default;
+
+/// @type Color
+$gray: rgb(207,216,220) !default; //bootstrap secondary color
+
+/// @type Color
+$light-gray: rgb(233,236,239) !default;
+
+/// @type Color
+$success: #73AF55 !default;
+
+/// @type Color
+$error: #D06079 !default;
+
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1024px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

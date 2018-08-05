@@ -1,0 +1,31 @@
+// slick slider class overwrites
+.slickSliderBtns {
+  button {
+    @extend .box-shadow;
+  }
+}
+.slick-track {
+  padding: 10px 0;
+  .slick-slide {
+    &.active, &:active {
+      @extend .box-shadow-purple;
+      background-color: $light-purple;
+      color: $white;
+      &.hover, &:hover {
+        text-decoration: none;
+        border-color: inherit !important;
+        // pointer-events: none;
+      }
+      &.focus, &:focus {
+        outline: none;
+      }
+    }
+    &.hover, &:hover {
+      border-color: $theme-purple !important;
+      text-decoration: none;
+    }
+    &.focus, &:focus {
+      outline: none;
+    }
+  }
+}

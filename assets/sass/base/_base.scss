@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 1rem;
+  margin-top: 8rem;
+  background-color: white;
+  font-size: 14px;
+}
+h6 {
+  font-family: Quarion-Hairline;
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $theme-purple;
+  cursor: pointer;
+  @include on-event {
+    color: $dark-purple;
+    font-weight: 900;
+  }
+}

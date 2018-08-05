@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn-steps {
+  color: $white;
+  border-radius: 20px;
+  width: 150px;
+  text-align: center;
+  background-color: $white;
+  color: $theme-purple;
+  font-weight: bolder;
+  border: 2px solid $theme-purple;
+  // pointer-events: none;
+  &:active, &.active {
+    background: $theme-purple;
+    color: $white;
+  }
+  &.done {
+    background:darken($theme-purple,25%);
+  }
+}
+.customBtn {
+ color: white;
+ text-decoration: none;
+ padding: 7px 15px;
+ border-radius: 20px;
+ text-transform: uppercase;
+ font-weight: 100;
+ letter-spacing: 1px;
+ outline: 0 !important;
+ border: none;
+ cursor: pointer;
+ background-color: transparent;
+}
+.customBtn-sm {
+  @include button-bg($white-2);
+  // @extend .box-shadow-purple;
+  border: 1px solid $light-purple;
+  color: $theme-purple;
+  padding: 5px 20px;
+  font-size: 0.75rem;
+  letter-spacing: 0.5;
+}
+.customBtn-icon {
+  background-color: transparent;
+  border: none;
+  color: $dark-purple;
+  padding: 0;
+}
+.customBtn-purple {
+   @include button-bg($theme-purple);
+}
+.customBtn-white {
+   @include button-bg($white);
+   color: $theme-purple;
+}
+.customBtn-special {
+  @include button-bg ($dark-purple);
+  background: linear-gradient(45deg, rgba($light-purple,1) 0%, rgba($light-blue,1) 100%);
+  box-shadow: 0 0.15rem 2rem 0.05rem rgba($light-purple,0.65);
+}

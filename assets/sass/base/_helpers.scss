@@ -1,0 +1,73 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.container {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+ }
+
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.box-shadow {
+  box-shadow: 0 0 10px 0 rgba(178, 178, 178, 0.4);
+}
+.box-shadow-purple {
+  box-shadow: 0 0.15rem 0.75rem 0.05rem rgba(161,130,195,0.75);
+}
+.text-purple {
+  color: $theme-purple;
+}
+.text-gray {
+  color: darken($gray,10%);
+}
+.badge-gray {
+  background-color: $gray;
+}
+.badge-white {
+  background-color: $white;
+  box-shadow: 0 0 8px 1px rgba(178, 178, 178, 0.4);
+}
+.bg-lightgray {
+  background-color: rgba($gray, 0.25);
+}
+.bg-white {
+  background-color: $white;
+}
+// .arrow {
+//   border: solid black;
+//   color: #000;
+//   border-width: 0 3px 3px 0;
+//   display: inline-block;
+//   padding: 3px;
+//   transform: rotate(-135deg);
+//     -webkit-transform: rotate(-135deg);
+// }

@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the session page.
+// -----------------------------------------------------------------------------
+#sessionDateTimeTable {
+  tr.active {
+    background-color: rgba($light-purple,0.25);
+    .customBtn-sm {
+      background-color: $theme-purple;
+      border-color: $white-2;
+      color: $white;
+    }
+  }
+}

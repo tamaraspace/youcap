@@ -1,0 +1,99 @@
+// bootstrap class overwrites
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgray !important;
+    font-weight: 100;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lightgray !important;
+    font-weight: 100;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: lightgray !important;
+    font-weight: 100;
+}
+
+.badge {
+  padding: 0.5em;
+  letter-spacing: 1.25px;
+  border-radius: 20px;
+  display: inline;
+}
+.form-control:focus {
+  border-color: $theme-purple;
+  @extend .box-shadow-purple;
+}
+.card {
+  border-radius: 0.5rem;
+  .card-header {
+    background-color: rgba($gray, 0.25);
+  }
+
+}
+.nav-tabs {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background: $theme-purple;
+  border: none;
+  .nav-item {
+    margin: 0;
+  }
+  .nav-link {
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    padding: 1rem;
+    transition: color .35s ease-out;
+    margin-top: 0;
+    color: $white-2;
+    &.active {
+      color: $theme-purple !important;
+    }
+  }
+}
+table {
+  background-color: rgba($light-gray,0.25) !important;
+  th, td {
+    vertical-align: middle !important;
+    padding: 1rem !important;
+    border-top: none !important;
+    border-bottom: 10px solid $white;
+  }
+  th {
+    background-color: $white;
+    font-size: 80%;
+    // color: $gray;
+  }
+}
+.table {
+  margin-bottom: 1rem;
+}
+.table-hover {
+  tbody {
+    tr {
+      background-color: rgba($light-gray,0.15);
+    }
+    &:hover {
+      background-color: rgba($light-gray,0.001);
+    }
+  }
+}
+.dropdown-item {
+  display: unset;
+  vertical-align: sub;
+  span {
+    vertical-align: middle;
+  }
+  @include on-event {
+    color: $dark-purple;
+    font-weight: 900;
+    background: transparent;
+  }
+}
+
+//borders
+.border {
+  border-color: $light-gray !important;
+}
