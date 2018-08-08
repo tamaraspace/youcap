@@ -46,11 +46,9 @@
         <div class="d-flex justify-content-center align-items-center bd-highlight">
           <a href="" class="p-2 bd-highlight btn-steps active">1. Information </a>
           <div  class="bd-highlight"><hr class="border-dark d-inline-block w85px my-2"></div>
-          <a href="" class="p-2 bd-highlight btn-steps active">2. Session</a>
+          <a href="" class="p-2 bd-highlight btn-steps active">2. Summary</a>
           <div  class="bd-highlight"><hr class="border-dark d-inline-block w85px my-2"></div>
-          <a href="" class="p-2 bd-highlight btn-steps active">3. Summary</a>
-          <div  class="bd-highlight"><hr class="border-dark d-inline-block w85px my-2"></div>
-          <a href="" class="p-2 bd-highlight btn-steps active">4. Pay</a>
+          <a href="" class="p-2 bd-highlight btn-steps active">3. Pay</a>
         </div>
       </section>
       <!-- step wizard ends here -->
@@ -70,10 +68,21 @@
         <div class="card mx-5 border box-shadow p-5">
           <div class="text-center">
             <h6 class="Quarion-Book text-gray mb-4">Please continue to Stripe - Online payment processing for your payment</h6>
-            <button type="button" class="btn-sm customBtn customBtn-purple box-shadow-purple" name="button">Continue</button>
+            <button type="button" class="btn-sm customBtn customBtn-special" name="button" onclick="location.href='success.html'">Continue</button>
           </div>
         </div>
       </section>
+
+      <!-- back btn -->
+      <div class="container my-4">
+        <div class="mx-5">
+          <div class="col-sm-12 px-0">
+            <div class="float-right mb-5">
+              <button type="button" class="btn-sm customBtn text-dark pr-0" name="button" onclick="location.href='summary.html'"><span class="mr-2 iconic iconic-arrow-left-fill-large-oblique"></span> Previous step </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">

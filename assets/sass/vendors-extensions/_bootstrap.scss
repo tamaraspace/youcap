@@ -26,7 +26,6 @@
   @extend .box-shadow-purple;
 }
 .card {
-  border-radius: 0.5rem;
   .card-header {
     background-color: rgba($gray, 0.25);
   }
@@ -57,9 +56,9 @@ table {
   background-color: rgba($light-gray,0.25) !important;
   th, td {
     vertical-align: middle !important;
-    padding: 1rem !important;
+    padding: 0.5rem 1rem !important;
     border-top: none !important;
-    border-bottom: 10px solid $white;
+    border-bottom: 2px solid rgba($light-gray, 0.35);
   }
   th {
     background-color: $white;
@@ -73,10 +72,10 @@ table {
 .table-hover {
   tbody {
     tr {
-      background-color: rgba($light-gray,0.15);
-    }
-    &:hover {
-      background-color: rgba($light-gray,0.001);
+      background-color: rgba($white,0.75);
+      &:hover, &.hover {
+        background-color: rgba($white,0.05) !important;
+      }
     }
   }
 }
@@ -96,4 +95,86 @@ table {
 //borders
 .border {
   border-color: $light-gray !important;
+}
+
+// accordion
+#examineeFullInfoPanel, #addExamineeDetailsPanel {
+  .panel-heading {
+    border-bottom: 1px solid $light-gray !important;
+    border-top: 1px solid $light-gray !important;
+    .panel-title {
+      position: relative;
+      color: $theme-purple;
+    }
+  }
+  .panel-body {
+    padding-bottom: 0;
+    border-top: none !important;
+  }
+  .panel-group .panel + .panel {
+    margin-top: 0;
+  }
+  .active {
+    color: $theme-purple !important;
+  }
+  .panel {
+    border-color: $gray;
+    margin-top: 0px;
+    border-bottom: none !important;
+    border-radius: 0.25rem !important;
+    a {
+      display: block;
+      margin: 10px 0;
+    }
+    .panel-heading {
+      a {
+        .collapsed:hover, .collapsed:focus {
+          transition: all 0.2s ease-in;
+        }
+        .collapsed:hover::before, .collapsed:focus::before {
+          color: $theme-purple;
+          border-bottom: 1px solid $light-gray !important;
+          border-top: 1px solid $light-gray !important;
+        }
+      }
+      a:not(.collapsed) {
+        color: $theme-purple;
+        transition: all 0.2s ease-in;
+      }
+    }
+  }
+  // .panel:last-child {
+  //   .panel-collapse {
+  //     .panel-body {
+  //       .row:last-child {
+  //         border-bottom-left-radius: 6px;
+  //         border-bottom-right-radius: 6px;
+  //         .row {
+  //           border-bottom-left-radius: 6px;
+  //           border-bottom-right-radius: 6px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  .accordion-toggle::before {
+    // content: '>';
+    font-family: 'iconic-sm';
+    content: '\e211';
+    float: right;
+    color: $theme-purple;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+    font-weight: bolder;
+    font-size: 0.5em;
+    margin-top: 5px;
+  }
+  .accordion-toggle.collapsed::before {
+    color: $theme-purple;
+    transform: rotate(0deg);
+    transition: all 0.2s ease-in;
+  }
+}
+.dropdown-divider {
+  margin: 5px;
 }

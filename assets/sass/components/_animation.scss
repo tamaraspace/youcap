@@ -2,7 +2,7 @@
 // This file contains all styles related to the animation component.
 // -----------------------------------------------------------------------------
 // success and error animations
-.sucessErrorAnim {
+
   svg {
     width: 75px;
     display: block;
@@ -32,14 +32,13 @@
     font-family: Quarion-Book;
     text-align: center;
     margin-bottom: 1.5rem;
-    &.success {
-      color: $success;
-    }
-    &.error {
-      color: $error;
-    }
   }
-
+  .success {
+    color: $success;
+  }
+  .error {
+    color: $error;
+  }
 
   @-webkit-keyframes dash {
     0% {
@@ -76,4 +75,3 @@
       stroke-dashoffset: 900;
     }
   }
-}

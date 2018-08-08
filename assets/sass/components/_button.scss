@@ -47,15 +47,31 @@
   color: $dark-purple;
   padding: 0;
 }
+
+.customBtn-error {
+  @include button-bg($white);
+  color: $error;
+  border-radius: 50%;
+  padding: 3px 5px 2px 7px;
+}
 .customBtn-purple {
    @include button-bg($theme-purple);
+   padding: 5px 20px;
 }
 .customBtn-white {
    @include button-bg($white);
    color: $theme-purple;
+   border: 1px solid $theme-purple;
 }
 .customBtn-special {
   @include button-bg ($dark-purple);
   background: linear-gradient(45deg, rgba($light-purple,1) 0%, rgba($light-blue,1) 100%);
   box-shadow: 0 0.15rem 2rem 0.05rem rgba($light-purple,0.65);
+}
+.customBtn-remove {
+  @include button-bg($white);
+  color: $error;
+  border: 1px solid $error;
+  padding: 3px 15px;
+  text-transform: inherit;
 }

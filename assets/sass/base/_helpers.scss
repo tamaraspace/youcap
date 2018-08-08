@@ -54,13 +54,20 @@
 }
 .badge-white {
   background-color: $white;
-  box-shadow: 0 0 8px 1px rgba(178, 178, 178, 0.4);
+  color: $dark-purple;
+  border: 1px solid $gray;
 }
 .bg-lightgray {
   background-color: rgba($gray, 0.25);
 }
 .bg-white {
   background-color: $white;
+}
+.w85px {
+  width: 204px;
+}
+.font-13 {
+  font-size: 13px;
 }
 // .arrow {
 //   border: solid black;

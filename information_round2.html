@@ -71,13 +71,36 @@
       <section class="examrow mb-4">
         <div class="container">
           <div class="card border box-shadow mx-5">
+            <div class="card-header p-0">
+              <!-- enrolled exams starts here  -->
+              <h6 class="card-subtitle text-dark m-0 p-3">Selected exams:</h6>
+              <div class="d-flex align-items-center pb-3">
+                <div class="badge badge-white ml-3">
+                  APV Level 1:Perform 1
+                </div>
+                <div class="badge badge-white ml-2 bd-highlight flex-wrap">
+                  APV Level 1:Perform 2
+                </div>
+                <div class="badge badge-white ml-2 bd-highlight flex-wrap">
+                  APV Level 1:Perform 3 <!--<a href=""><span class="ml-2 iconic iconic-circle-x"></span></a> -->
+                </div>
+                <div class="badge badge-white ml-2 bd-highlight flex-wrap">
+                  APV Level 1:Perform 4
+                </div>
+                <div class="badge badge-white ml-2 bd-highlight flex-wrap">
+                  APV Level 1:Perform 5
+                </div>
+                <a tabindex="0" class="Quarion-Book text-purple ml-2 underline" data-toggle="popover" data-placement="right" data-trigger="focus" title="Selected exams" data-content="APV Level 1:Perform1 | APV Level 1:Perform2 | APV Level 1:Perform3 | APV Level 1:Perform4 | APV Level 1:Perform5 ">5 more >></a>
+              </div>
+              <!-- enrolled exams ends here  -->
+            </div>
 
             <!-- exam select starts here -->
             <div class="card-body">
               <form class="selectExam row">
                 <div class="col-sm-6">
                   <div class="form-group mb-0">
-                    <label for="selectExamType">Please select an exam</label>
+                    <label for="selectExamType">Please select exam</label>
                     <select class="form-control" id="selectExamType">
                       <option>APV Level 1:Perform</option>
                       <option>APV Level 2:Perform</option>
@@ -123,7 +146,34 @@
                 <div class="panel-body p-0">
                   <!-- add personal info -->
                   <div class="row m-0 mb-2 p-3 bg-lightgray">
-                    <h5 class="Quarion-Book text-muted">Personal info</h5>
+                    <h5 class="Quarion-Book text-muted underline">Personal info</h5>
+                    <!-- add new / existing user -->
+                    <div class="container mt-2 px-0">
+                      <form class="sessionDetails row mb-4">
+                        <div class="col-sm-6">
+                          <div class="form-group mb-0">
+                            <label for="selectExamType" class="Quarion-Book">Please select the user type</label>
+                            <select class="form-control" id="usertype">
+                              <option>New user</option>
+                              <option>Excisting user</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="form-group mb-0">
+                            <label for="selectExamType" class="Quarion-Book">Please select an excisting user</label>
+                            <select class="form-control" id="selectBookingType">
+                              <option>Phil Coulson</option>
+                              <option>Jon Snow</option>
+                              <option>Chandler Bing</option>
+                              <option>Monica Galler</option>
+                              <option>Tony Stark</option>
+                              <option>Stephen Strange</option>
+                            </select>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
                     <div class="container mt-2 px-0">
                       <form class="examineeDetails row">
                         <div class="col-sm-6">
@@ -265,7 +315,7 @@
                     <div class="col-12 p-0">
                       <div class="float-right">
                         <!-- <button type="button" class="btn-sm customBtn customBtn-remove mr-3" name="button"> Remove </button> -->
-                        <button type="button" class="btn-sm customBtn customBtn-purple" name="button" data-toggle="modal" data-target="#saveSuccess"><span class="iconic iconic-circle-check mr-2"></span>Save</button>
+                        <button type="button" class="btn-sm customBtn customBtn-purple" name="button"><span class="iconic iconic-circle-check mr-2"></span>Save</button>
                       </div>
                     </div>
                   </div>
@@ -388,7 +438,7 @@
                                   <td>€ 430</td>
                                   <td><button type="button" class="btn-sm customBtn customBtn-sm" name="button">Select</button></td>
                                 </tr>
-                                <tr class="active">
+                                <tr>
                                   <td scope="row">17 January 2019</td>
                                   <td>17:00</td>
                                   <td>04</td>
@@ -428,7 +478,7 @@
                     <div class="col-12 p-0">
                       <div class="float-right">
                         <!-- <button type="button" class="btn-sm customBtn customBtn-remove mr-3" name="button"> Remove </button> -->
-                        <button type="button" class="btn-sm customBtn customBtn-purple" name="button" data-toggle="modal" data-target="#saveSuccess"><span class="iconic iconic-circle-check mr-2"></span>Save</button>
+                        <button type="button" class="btn-sm customBtn customBtn-purple" name="button"><span class="iconic iconic-circle-check mr-2"></span>Save</button>
                       </div>
                     </div>
                   </div>
@@ -459,41 +509,7 @@
         <span class="text-muted">© 2018 - YouCap. All Rights Reserved.</span>
       </div>
     </footer>
-    <!-- save success modal -->
-    <div class="modal fade" id="saveSuccess" tabindex="-1" role="dialog" aria-labelledby="saveSuccessModal" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <div class="successAnim text-center">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
-                <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
-                <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-              </svg>
-              <h4 class="success">Successfully saved Examinee 1 </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- error modal -->
-    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModal" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="errorModalLabel">Change the exam ?</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Are you sure, you want to change this exam? All the examinee details will be removed permanently.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn-xs customBtn customBtn-purple">Remove</button>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
