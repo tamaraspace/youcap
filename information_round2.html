@@ -147,33 +147,7 @@
                   <!-- add personal info -->
                   <div class="row m-0 mb-2 p-3 bg-lightgray">
                     <h5 class="Quarion-Book text-muted underline">Personal info</h5>
-                    <!-- add new / existing user -->
-                    <div class="container mt-2 px-0">
-                      <form class="sessionDetails row mb-4">
-                        <div class="col-sm-6">
-                          <div class="form-group mb-0">
-                            <label for="selectExamType" class="Quarion-Book">Please select the user type</label>
-                            <select class="form-control" id="usertype">
-                              <option>New user</option>
-                              <option>Excisting user</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="form-group mb-0">
-                            <label for="selectExamType" class="Quarion-Book">Please select an excisting user</label>
-                            <select class="form-control" id="selectBookingType">
-                              <option>Phil Coulson</option>
-                              <option>Jon Snow</option>
-                              <option>Chandler Bing</option>
-                              <option>Monica Galler</option>
-                              <option>Tony Stark</option>
-                              <option>Stephen Strange</option>
-                            </select>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
+
                     <div class="container mt-2 px-0">
                       <form class="examineeDetails row">
                         <div class="col-sm-6">
@@ -210,13 +184,6 @@
                           <div class="form-group mb-4">
                             <label for="id06No" class="Quarion-Book">Id06 number</label>
                             <input type="number" class="form-control" id="id06No" placeholder="BB-1234-123456">
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label font-weight-light font-13" for="exampleCheck1">
-                              I certify that if this booking is for different person than me, that person has given me his or her consent to use their personal information required for this booking.</label>
                           </div>
                         </div>
                       </form>
@@ -375,13 +342,6 @@
                             <input type="number" class="form-control" id="id06No" placeholder="BB-1234-123456">
                           </div>
                         </div>
-                        <div class="col-sm-12">
-                          <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label font-weight-light font-13" for="exampleCheck1">
-                              I certify that if this booking is for different person than me, that person has given me his or her consent to use their personal information required for this booking.</label>
-                          </div>
-                        </div>
                       </form>
                     </div>
                   </div>
@@ -493,7 +453,15 @@
 
       <!-- next and previous btns -->
       <div class="container my-4">
+        <hr class="mx-5 px-5">
         <div class="mx-5">
+          <div class="col-sm-12 px-0 mb-4">
+            <label class="font-weight-light font-13 customCheckbox">
+              I certify that if this booking is for different person than me, that person has given me his or her consent to use their personal information required for this booking.
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
           <div class="col-sm-12 px-0">
             <button type="button" class="btn-sm customBtn customBtn-purple box-shadow-purple" name="button" onclick="location.href='information_round2.html'"><span class="mr-2 iconic iconic-document"></span>Add another exam</button>
             <div class="float-right mb-5">
