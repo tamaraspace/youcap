@@ -45,31 +45,22 @@
     <!-- Begin page content -->
     <main role="main" class="container mainWrapper mb-5">
       <!-- step wizard starts here -->
-      <section class="steps mb-5">
-        <div class="d-flex justify-content-center align-items-center bd-highlight">
-          <a href="" class="p-2 bd-highlight btn-steps active">1. Information </a>
-          <div  class="bd-highlight"><hr class="border-dark d-inline-block w85px my-2"></div>
-          <a href="" class="p-2 bd-highlight btn-steps active">2. Summary</a>
-          <div  class="bd-highlight"><hr class="border-dark d-inline-block w85px my-2"></div>
-          <a href="" class="p-2 bd-highlight btn-steps">3. Pay</a>
+      <section class="steps mb-5 container">
+        <div class="mx-lg-5">
+          <div class="d-flex justify-content-between align-items-center bd-highlight">
+            <a href="" class="p-1 bd-highlight btn-steps active">1. Information </a>
+            <hr class="border-dark d-inline-block w-15 my-2">
+            <a href="" class="p-1 bd-highlight btn-steps active">2. Summary</a>
+            <hr class="border-dark d-inline-block w-15 my-2">
+            <a href="" class="p-1 bd-highlight btn-steps">3. Pay</a>
+          </div>
         </div>
       </section>
       <!-- step wizard ends here -->
 
-      <!-- add examinee -->
-      <!-- <div class="container mb-4">
-        <div class="row mx-5">
-          <div class="col-sm-12 px-0">
-            <div class="float-right">
-              <button type="button" class="btn-sm customBtn customBtn-special" name="button"><span class="mr-2 iconic iconic-person-genderless"></span>Add another examinee</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
       <!-- grand total -->
       <section class="container mb-4">
-        <div class="card mx-5 box-shadow border bg-lightgray p-3">
+        <div class="card mx-lg-5 box-shadow border bg-lightgray p-3">
           <div class="text-center">
             <div class="text-gray yc-caption-xl">Grand total: <span class="text-purple">£ 335</span></div>
             <p class="small text-gray text-uppercase mb-0">5 examinees | 8 exams</p>
@@ -79,9 +70,9 @@
 
       <!-- examinee summary slider -->
       <section class="container mb-4">
-        <div class="mx-5">
+        <div class="mx-lg-5">
           <div class="card-deck summarySlider">
-            <a class="card border box-shadow">
+            <a class="card border box-shadow mx-2">
               <div class="card-body">
                 <h5 class="card-title mb-3 Quarion-Book">Examinee 1</h5>
                 <p class="card-text text-dark mb-1">Phil Coulson</p>
@@ -91,7 +82,7 @@
                 <span class="Quarion-Book align-text-top">Total £ 335</span>
               </div>
             </a>
-            <a class="card border box-shadow active">
+            <a class="card border box-shadow mx-2 active">
               <div class="card-body">
                 <h5 class="card-title mb-3 Quarion-Book">Examinee 2</h5>
                 <p class="card-text text-dark mb-1">Phil Coulson</p>
@@ -101,7 +92,7 @@
                 <span class="Quarion-Book align-text-top">Total £ 335</span>
               </div>
             </a>
-            <a class="card border box-shadow">
+            <a class="card border box-shadow mx-2">
               <div class="card-body">
                 <h5 class="card-title mb-3 Quarion-Book">Examinee 3</h5>
                 <p class="card-text text-dark mb-1">Phil Coulson</p>
@@ -111,7 +102,7 @@
                 <span class="Quarion-Book align-text-top">Total £ 335</span>
               </div>
             </a>
-            <a class="card border box-shadow">
+            <a class="card border box-shadow mx-2">
               <div class="card-body">
                 <h5 class="card-title mb-3 Quarion-Book">Examinee 4</h5>
                 <p class="card-text text-dark mb-1">Phil Coulson</p>
@@ -121,7 +112,7 @@
                 <span class="Quarion-Book align-text-top">Total £ 335</span>
               </div>
             </a>
-            <a class="card border box-shadow">
+            <a class="card border box-shadow mx-2">
               <div class="card-body">
                 <h5 class="card-title mb-3 Quarion-Book">Examinee 5</h5>
                 <p class="card-text text-dark mb-1">Phil Coulson</p>
@@ -131,7 +122,7 @@
                 <span class="Quarion-Book align-text-top">Total £ 335</span>
               </div>
             </a>
-            <a class="card border box-shadow">
+            <a class="card border box-shadow mx-2">
               <div class="card-body">
                 <h5 class="card-title mb-3 Quarion-Book">Examinee 6</h5>
                 <p class="card-text text-dark mb-1">Phil Coulson</p>
@@ -141,7 +132,7 @@
                 <span class="Quarion-Book align-text-top">Total £ 335</span>
               </div>
             </a>
-            <a class="card border box-shadow">
+            <a class="card border box-shadow mx-2">
               <div class="card-body">
                 <h5 class="card-title mb-3 Quarion-Book">Examinee 7</h5>
                 <p class="card-text text-dark mb-1">Phil Coulson</p>
@@ -152,11 +143,11 @@
               </div>
             </a>
           </div>
-          <div class="slickSliderBtns container mt-2 px-0">
+          <div class="slickSliderBtns container mt-sm-3 px-0">
             <div class="d-flex justify-content-center align-middle">
               <div class="bd-highlight">
-                <button class="slickCustomPrev btn-sm customBtn customBtn-sm"><span class="iconic iconic-chevron-left"></span></span></button>
-                <button class="slickCustomNext btn-sm customBtn customBtn-sm ml-4"><span class="iconic iconic-chevron-right"></span></span></button>
+                <button id="slickSummaryPrev" class="slickCustomPrev btn-sm customBtn customBtn-sm"><span class="iconic iconic-chevron-left"></span></button>
+                <button id="slickSummaryNext" class="slickCustomNext btn-sm customBtn customBtn-sm ml-4"><span class="iconic iconic-chevron-right"></span></button>
               </div>
             </div>
           </div>
@@ -165,48 +156,51 @@
 
       <!-- examinee full detail accordion -->
       <section class="container mb-4">
-        <div id="examineeFullInfoPanel" class="card box-shadow mx-5">
+        <div id="examineeFullInfoPanel" class="card box-shadow mx-lg-5">
           <div id="examineeDetails" class="panel-group">
           <!-- panel 1 starts here -->
             <div class="panel">
               <div class="panel-heading">
                 <h4 class="panel-title px-3">
                   <!-- to open the panel remove collapsed class from a tag and add show class to panel-collapse -->
-                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#examineeDetails" href="#examineeDetailscollapseOne">
+                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#examineeDetails" href="#examineeDetailscollapseOne">
                     <h5 class="Quarion-Book text-purple">Examinee 1</h5>
                   </a>
                 </h4>
               </div>
-              <div id="examineeDetailscollapseOne" class="panel-collapse collapse">
+              <div id="examineeDetailscollapseOne" class="panel-collapse collapse show">
                 <div class="panel-body p-0">
                   <!-- examinee's personal info -->
                   <div class="row m-0 p-3 mb-2 bg-lightgray">
-                    <h5 class="Quarion-Book text-muted">Personal info</h5>
-                    <div class="ml-auto"><button type="button" class="btn-sm customBtn customBtn-error" data-toggle="modal" data-target="#examineeDeleteModal" name="button"><span class="iconic iconic-trash"></span></div>
+                    <div class="container px-0">
+                      <h5 class="Quarion-Book d-inline">Personal info</h5>
+                      <span class="ml-2"><button type="button" class="btn-md customBtn customBtn-icon" name="button"><span class="iconic iconic-pencil"></span></button></span>
+                      <button type="button" class="float-right btn-sm customBtn customBtn-error" data-toggle="modal" data-target="#examineeDeleteModal" name="button"><span class="iconic iconic-trash"></span></button>
+                    </div>
                     <div class="container mt-2 px-0">
-                      <div class="d-flex justify-content-between align-middle">
-                        <div class="bd-highlight">
-                          <span class="text-muted">Name:</span>
-                          <span class="text-dark">Phil Coulson</span>
+                      <div class="row">
+                        <div class="col-6 col-sm-3 mt-2">
+                          <dt class="text-muted text-uppercase">Name:</dt>
+                          <dd class="text-dark">Phil Coulson</dd>
                         </div>
-                        <div class="bd-highlight">
-                          <span class="text-muted">Mobile:</span>
-                          <span class="text-dark">073 5186551</span>
+                        <div class="col-6 col-sm-3 mt-2">
+                          <dt class="text-muted">Mobile:</dt>
+                          <dd class="text-dark">073 5186551</dd>
                         </div>
-                        <div class="bd-highlight">
-                          <span class="text-muted">ID number:</span>
-                          <span class="text-dark">781224-6745</span>
+                        <div class="col-6 col-sm-3 mt-2">
+                          <dt class="text-muted">ID number:</dt>
+                          <dd class="text-dark">781224-6745</dd>
                         </div>
-                        <div class="bd-highlight">
-                          <span class="text-muted">Id06:</span>
-                          <span class="text-dark">BB-1234-1223456</span>
+                        <div class="col-6 col-sm-3 mt-2">
+                          <dt class="text-muted">Id06:</dt>
+                          <dd class="text-dark">BB-1234-1223456</dd>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- examinee's exam info -->
-                  <div class="row m-0 p-3 bg-lightgray">
-                    <h5 class="Quarion-Book text-muted">Exam info</h5>
+                  <!-- examinee's exam info - large screen < 768 -->
+                  <div class="row m-0 p-3 bg-lightgray d-none d-md-block">
+                    <h5 class="Quarion-Book">Exam info</h5>
                     <div class="selectedExams">
                       <div class="container px-0">
                         <div class="card">
@@ -216,13 +210,13 @@
                                 <table id="selectedExamdetails" class="table table-hover mb-0">
                                   <thead class="text-uppercase text-gray">
                                     <tr>
-                                      <th scope="col" width="30%">Exam</th>
-                                      <th scope="col" width="15%">City</th>
-                                      <th scope="col" width="10%">Type of booking</th>
-                                      <th scope="col" width="25%">Date</th>
-                                      <th scope="col" width="5%">Time</th>
-                                      <th scope="col" width="10%">Price</th>
-                                      <th scope="col" width="5%">Actions</th>
+                                      <th scope="col">Exam</th>
+                                      <th scope="col">City</th>
+                                      <th scope="col">Type of booking</th>
+                                      <th scope="col">Date</th>
+                                      <th scope="col">Time</th>
+                                      <th scope="col">Price</th>
+                                      <th scope="col">Actions</th>
                                     </tr>
                                   </thead>
                                   <tbody>
@@ -335,6 +329,161 @@
                       </div>
                     </div>
                   </div>
+                  <!-- examinee's exam info - small screen > 768-->
+                  <div class="container bg-lightgray">
+                    <div class="d-md-none py-3 px-2">
+                      <h5 class="Quarion-Book">Exam info</h5>
+                        <div class="selectedExamsSlider card-deck">
+                          <!-- exam 1 -->
+                          <div class="card border mx-2">
+                            <div class="card-body selectedExams">
+                              <div class="d-flex bd-highlight">
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Exam 1:</dt>
+                                  <dd class="Quarion-Book mb-0">APV Level 1:Perform</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <div class="dropleft float-right">
+                                    <button class="btn-sm customBtn customBtn-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span class="iconic iconic-ellipses iconic-sm align-middle" title="ellipses" aria-hidden="true"></span></button>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-purple my-0" href="#"><span class="iconic iconic-pencil pr-2" title="pencil" aria-hidden="true"></span> <span>Edit</span></a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item text-purple my-0" href="#" data-toggle="modal" data-target="#examDeleteModal"><span class="iconic iconic-trash pr-2" title="trash" aria-hidden="true"></span> <span>Remove</span></a>
+                                    </div>
+                                  </div>
+                                </span>
+                              </div>
+                              <hr class="my-2">
+                              <div class="d-flex bd-highlight">
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Date:</dt>
+                                  <dd class="Quarion-Book mb-0">23/12/2019</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Time:</dt>
+                                  <dd class="Quarion-Book mb-0">17:00</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">City:</dt>
+                                  <dd class="Quarion-Book mb-0">Colombo</dd>
+                                </span>
+                              </div>
+                              <hr class="my-2">
+                              <div class="d-flex bd-highlight">
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Price:</dt>
+                                  <dd class="Quarion-Book mb-0">€ 430</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Type of booking:</dt>
+                                  <dd class="Quarion-Book">Flexible</dd>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- exam 2 -->
+                          <div class="card border mx-2">
+                            <div class="card-body selectedExams">
+                              <div class="d-flex bd-highlight">
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Exam 2:</dt>
+                                  <dd class="Quarion-Book mb-0">APV Level 1:Perform</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <div class="dropleft float-right">
+                                    <button class="btn-sm customBtn customBtn-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span class="iconic iconic-ellipses iconic-sm align-middle" title="ellipses" aria-hidden="true"></span></button>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-purple my-0" href="#"><span class="iconic iconic-pencil pr-2" title="pencil" aria-hidden="true"></span> <span>Edit</span></a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item text-purple my-0" href="#" data-toggle="modal" data-target="#examDeleteModal"><span class="iconic iconic-trash pr-2" title="trash" aria-hidden="true"></span> <span>Remove</span></a>
+                                    </div>
+                                  </div>
+                                </span>
+                              </div>
+                              <hr class="my-2">
+                              <div class="d-flex bd-highlight">
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Date:</dt>
+                                  <dd class="Quarion-Book mb-0">23/12/2019</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Time:</dt>
+                                  <dd class="Quarion-Book mb-0">17:00</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">City:</dt>
+                                  <dd class="Quarion-Book mb-0">Colombo</dd>
+                                </span>
+                              </div>
+                              <hr class="my-2">
+                              <div class="d-flex bd-highlight">
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Price:</dt>
+                                  <dd class="Quarion-Book mb-0">€ 430</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Type of booking:</dt>
+                                  <dd class="Quarion-Book">Flexible</dd>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- exam 3 -->
+                          <div class="card border mx-2">
+                            <div class="card-body selectedExams">
+                              <div class="d-flex bd-highlight">
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Exam 3:</dt>
+                                  <dd class="Quarion-Book mb-0">APV Level 1:Perform</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <div class="dropleft float-right">
+                                    <button class="btn-sm customBtn customBtn-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <span class="iconic iconic-ellipses iconic-sm align-middle" title="ellipses" aria-hidden="true"></span></button>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-purple my-0" href="#"><span class="iconic iconic-pencil pr-2" title="pencil" aria-hidden="true"></span> <span>Edit</span></a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item text-purple my-0" href="#" data-toggle="modal" data-target="#examDeleteModal"><span class="iconic iconic-trash pr-2" title="trash" aria-hidden="true"></span> <span>Remove</span></a>
+                                    </div>
+                                  </div>
+                                </span>
+                              </div>
+                              <hr class="my-2">
+                              <div class="d-flex bd-highlight">
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Date:</dt>
+                                  <dd class="Quarion-Book mb-0">23/12/2019</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Time:</dt>
+                                  <dd class="Quarion-Book mb-0">17:00</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">City:</dt>
+                                  <dd class="Quarion-Book mb-0">Colombo</dd>
+                                </span>
+                              </div>
+                              <hr class="my-2">
+                              <div class="d-flex bd-highlight">
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Price:</dt>
+                                  <dd class="Quarion-Book mb-0">€ 430</dd>
+                                </span>
+                                <span class="flex-fill bd-highlight">
+                                  <dt class="text-uppercase text-gray">Type of booking:</dt>
+                                  <dd class="Quarion-Book">Flexible</dd>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                 </div>
                 <!-- panel body ends here -->
               </div>
@@ -342,188 +491,33 @@
             <!-- panel 1 ends here -->
 
             <!-- panel 2 starts here -->
-              <div class="panel">
-                <div class="panel-heading">
-                  <h4 class="panel-title px-3">
-                    <!-- to open the panel remove collapsed class from a tag and add show class to panel-collapse -->
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#examineeDetails" href="#examineeDetailscollapseTwo">
-                      <h5 class="Quarion-Book text-purple">Examinee 2</h5>
-                    </a>
-                  </h4>
-                </div>
-                <div id="examineeDetailscollapseTwo" class="panel-collapse collapse show">
-                  <div class="panel-body p-0">
-                    <!-- examinee's personal info -->
-                    <div class="row m-0 p-3 mb-2 bg-lightgray">
-                      <h5 class="Quarion-Book text-muted">Personal info</h5>
-                      <div class="ml-auto"><button type="button" class="btn-sm customBtn customBtn-error" data-toggle="modal" data-target="#examineeDeleteModal" name="button"><span class="iconic iconic-trash"></span></div>
-                      <div class="container mt-2 px-0">
-                        <div class="d-flex justify-content-between align-middle">
-                          <div class="bd-highlight">
-                            <span class="text-muted">Name:</span>
-                            <span class="text-dark">Phil Coulson</span>
-                          </div>
-                          <div class="bd-highlight">
-                            <span class="text-muted">Mobile:</span>
-                            <span class="text-dark">073 5186551</span>
-                          </div>
-                          <div class="bd-highlight">
-                            <span class="text-muted">ID number:</span>
-                            <span class="text-dark">781224-6745</span>
-                          </div>
-                          <div class="bd-highlight">
-                            <span class="text-muted">Id06:</span>
-                            <span class="text-dark">BB-1234-1223456</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- examinee's exam info -->
-                    <div class="row m-0 p-3 bg-lightgray">
-                      <h5 class="Quarion-Book text-muted">Exam info</h5>
-                      <div class="selectedExams">
-                        <div class="container px-0">
-                          <div class="card">
-                            <div class="card-body p-0">
-                              <form class="selectDateTime row">
-                                <div class="col-12">
-                                  <table id="selectedExamdetails" class="table table-hover mb-0">
-                                    <thead class="text-uppercase text-gray">
-                                      <tr>
-                                        <th scope="col" width="30%">Exam</th>
-                                        <th scope="col" width="15%">City</th>
-                                        <th scope="col" width="10%">Type of booking</th>
-                                        <th scope="col" width="25%">Date</th>
-                                        <th scope="col" width="5%">Time</th>
-                                        <th scope="col" width="10%">Price</th>
-                                        <th scope="col" width="5%">Actions</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td scope="row">APV Level 1:Perform</td>
-                                        <td>Stockholm</td>
-                                        <td>Flexible</td>
-                                        <td>23 December 2019</td>
-                                        <td>17:00</td>
-                                        <td>€ 430</td>
-                                        <td class="text-center">
-                                          <div class="dropdown">
-                                            <button class="btn-sm customBtn customBtn-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              <span class="iconic iconic-ellipses iconic-sm align-middle" title="ellipses" aria-hidden="true"></span></button>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                              <a class="dropdown-item text-purple my-0" href="#"><span class="iconic iconic-pencil pr-2" title="pencil" aria-hidden="true"></span> <span>Edit</span></a>
-                                              <div class="dropdown-divider"></div>
-                                              <a class="dropdown-item text-purple my-0" href="#" data-toggle="modal" data-target="#examDeleteModal"><span class="iconic iconic-trash pr-2" title="trash" aria-hidden="true"></span> <span>Remove</span></a>
-                                            </div>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td scope="row">APV Level 1:Perform</td>
-                                        <td>Stockholm</td>
-                                        <td>Flexible</td>
-                                        <td>23 December 2019</td>
-                                        <td>17:00</td>
-                                        <td>€ 430</td>
-                                        <td class="text-center">
-                                          <div class="dropdown">
-                                            <button class="btn-sm customBtn customBtn-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              <span class="iconic iconic-ellipses iconic-sm align-middle" title="ellipses" aria-hidden="true"></span></button>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                              <a class="dropdown-item text-purple my-0" href="#"><span class="iconic iconic-pencil pr-2" title="pencil" aria-hidden="true"></span> <span>Edit</span></a>
-                                              <div class="dropdown-divider"></div>
-                                              <a class="dropdown-item text-purple my-0" href="#" data-toggle="modal" data-target="#examDeleteModal"><span class="iconic iconic-trash pr-2" title="trash" aria-hidden="true"></span> <span>Remove</span></a>
-                                            </div>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td scope="row">APV Level 1:Perform</td>
-                                        <td>Stockholm</td>
-                                        <td>Flexible</td>
-                                        <td>23 December 2019</td>
-                                        <td>17:00</td>
-                                        <td>€ 430</td>
-                                        <td class="text-center">
-                                          <div class="dropdown">
-                                            <button class="btn-sm customBtn customBtn-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              <span class="iconic iconic-ellipses iconic-sm align-middle" title="ellipses" aria-hidden="true"></span></button>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                              <a class="dropdown-item text-purple my-0" href="#"><span class="iconic iconic-pencil pr-2" title="pencil" aria-hidden="true"></span> <span>Edit</span></a>
-                                              <div class="dropdown-divider"></div>
-                                              <a class="dropdown-item text-purple my-0" href="#" data-toggle="modal" data-target="#examDeleteModal"><span class="iconic iconic-trash pr-2" title="trash" aria-hidden="true"></span> <span>Remove</span></a>
-                                            </div>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td scope="row">APV Level 1:Perform</td>
-                                        <td>Stockholm</td>
-                                        <td>Flexible</td>
-                                        <td>23 December 2019</td>
-                                        <td>17:00</td>
-                                        <td>€ 430</td>
-                                        <td class="text-center">
-                                          <div class="dropdown">
-                                            <button class="btn-sm customBtn customBtn-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              <span class="iconic iconic-ellipses iconic-sm align-middle" title="ellipses" aria-hidden="true"></span></button>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                              <a class="dropdown-item text-purple my-0" href="#"><span class="iconic iconic-pencil pr-2" title="pencil" aria-hidden="true"></span> <span>Edit</span></a>
-                                              <div class="dropdown-divider"></div>
-                                              <a class="dropdown-item text-purple my-0" href="#" data-toggle="modal" data-target="#examDeleteModal"><span class="iconic iconic-trash pr-2" title="trash" aria-hidden="true"></span> <span>Remove</span></a>
-                                            </div>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td scope="row">APV Level 1:Perform</td>
-                                        <td>Stockholm</td>
-                                        <td>Flexible</td>
-                                        <td>23 December 2019</td>
-                                        <td>17:00</td>
-                                        <td>€ 430</td>
-                                        <td class="text-center">
-                                          <div class="dropdown">
-                                            <button class="btn-sm customBtn customBtn-icon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              <span class="iconic iconic-ellipses iconic-sm align-middle" title="ellipses" aria-hidden="true"></span></button>
-                                            </button>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                              <a class="dropdown-item text-purple my-0" href="#"><span class="iconic iconic-pencil pr-2" title="pencil" aria-hidden="true"></span> <span>Edit</span></a>
-                                              <div class="dropdown-divider"></div>
-                                              <a class="dropdown-item text-purple my-0" href="#" data-toggle="modal" data-target="#examDeleteModal"><span class="iconic iconic-trash pr-2" title="trash" aria-hidden="true"></span> <span>Remove</span></a>
-                                            </div>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- panel body ends here -->
-                </div>
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title px-3">
+                  <!-- to open the panel remove collapsed class from a tag and add show class to panel-collapse -->
+                  <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#examineeDetails" href="#examineeDetailscollapseTwo">
+                    <h5 class="Quarion-Book text-purple">Examinee 2</h5>
+                  </a>
+                </h4>
               </div>
-              <!-- panel 2 ends here -->
+              <div id="examineeDetailscollapseTwo" class="panel-collapse collapse" style="height:0px; overflow:hidden;">
+                <div class="panel-body p-0">
+
+                </div>
+                <!-- panel body ends here -->
+              </div>
+            </div>
+            <!-- panel 2 ends here -->
 
           </div>
         </div>
       </section>
       <!-- next and previous btns -->
       <div class="container my-4">
-        <div class="mx-5">
-          <div class="col-sm-12 pr-0">
+        <div class="mx-lg-5">
+          <div class="col-xs-12 px-0">
             <div class="float-right mb-5">
-              <button type="button" class="btn-sm customBtn text-dark mr-3" name="button" onclick="location.href='information_round2.html'"><span class="mr-2 iconic iconic-arrow-left-fill-large-oblique"></span> Previous step </button>
+              <button type="button" class="btn-sm customBtn text-dark mr-3 pl-0" name="button" onclick="location.href='information_round2.html'"><span class="mr-2 iconic iconic-arrow-left-fill-large-oblique"></span> Previous step </button>
               <button type="button" class="btn-sm customBtn customBtn-special" name="button" onclick="location.href='pay.html'">Next step <span class="ml-2 iconic iconic-arrow-right-fill-large-oblique"></span></button>
             </div>
           </div>
@@ -583,8 +577,30 @@
 
     <script type="text/javascript">
     $(document).ready(function(){
+      $('.selectedExamsSlider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        nextArrow: $("#slickExamNext"),
+        prevArrow: $("#slickExamPrev"),
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              centerMode: true,
+              centerPadding: '20px',
+              arrows: false,
+            }
+          }
+        ]
+      });
       $('.summarySlider').slick({
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 4,
@@ -595,14 +611,17 @@
           {
             breakpoint: 1024,
             settings: {
+              centerMode: true,
               slidesToShow: 3,
               slidesToScroll: 3,
-              infinite: true
+              infinite: true,
+              dots: true
             }
           },
           {
             breakpoint: 600,
             settings: {
+              centerMode: true,
               slidesToShow: 2,
               slidesToScroll: 2
             }
@@ -610,8 +629,10 @@
           {
             breakpoint: 480,
             settings: {
+              centerMode: true,
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+
             }
           }
           // You can unslick at a given breakpoint now by adding:

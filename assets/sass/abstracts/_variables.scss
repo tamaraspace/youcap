@@ -45,6 +45,8 @@ $gray: rgb(207,216,220) !default; //bootstrap secondary color
 
 /// @type Color
 $light-gray: rgb(233,236,239) !default;
+/// @type Color
+$default-text: #6c6f73 !default;
 
 /// @type Color
 $success: #73AF55 !default;
@@ -61,9 +63,11 @@ $max-width: 1024px !default;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  'xs': (min-width: 375px),
+  'small': (min-width: 576px),
+  'medium': (min-width: 768px),
+  'large': (min-width: 992px),
+  'xl': (min-width: 1200px),
 ) !default;
 
 /// Relative or absolute URL where all assets are served from

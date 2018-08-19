@@ -14,15 +14,15 @@
     user-select: none;
     /* Hide the browser's default checkbox */
     input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        &:checked ~ .checkmark {
-            background-color: $theme-purple;
-            &:after {
-                display: block;
-            }
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      &:checked ~ .checkmark {
+        background-color: $theme-purple;
+        &:after {
+          display: block;
         }
+      }
     }
     /* Create a custom checkbox */
     .checkmark {
@@ -49,5 +49,52 @@
     }
     &:active input ~ .checkmark {
         background-color: $theme-purple;
+    }
+}
+
+.customRadioBtn {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    // margin-bottom: 12px;
+    cursor: pointer;
+    // font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* Hide the browser's default radio button */
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      &:checked ~ .checkmark {
+        background-color: $theme-purple;
+        &:after {
+          display: block;
+        }
+      }
+    }
+    /* Create a custom radio button */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-color: $light-gray;
+        border-radius: 50%;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            top: 4px;
+            left: 4px;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border: solid $white-2;
+            background: $theme-purple;
+        }
     }
 }

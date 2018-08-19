@@ -14,7 +14,6 @@
     color: lightgray !important;
     font-weight: 100;
 }
-
 .badge {
   padding: 0.5em;
   letter-spacing: 1.25px;
@@ -22,7 +21,7 @@
   display: inline;
 }
 .form-control:focus {
-  border-color: $theme-purple;
+  border-color: $light-purple;
   @extend .box-shadow-purple;
 }
 .card {
@@ -114,9 +113,13 @@ table {
   .panel-group .panel + .panel {
     margin-top: 0;
   }
-  .active {
-    color: $theme-purple !important;
+  .card {
+    @extend .text-gray;
+    dd {
+      color: $default-text;
+    }
   }
+  
   .panel {
     border-color: $gray;
     margin-top: 0px;

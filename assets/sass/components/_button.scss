@@ -4,7 +4,8 @@
 .btn-steps {
   color: $white;
   border-radius: 20px;
-  width: 150px;
+  width: 100px;
+  font-size: 11px;
   text-align: center;
   background-color: $white;
   color: $theme-purple;
@@ -17,6 +18,10 @@
   }
   &.done {
     background:darken($theme-purple,25%);
+  }
+  @include respond-to('small') {
+    width: 150px;
+    font-size: 14px;
   }
 }
 .customBtn {
