@@ -67,6 +67,10 @@
 .bg-white {
   background-color: $white;
 }
+.alert-purple {
+  background-color: rgba($light-purple, 0.25);
+  color: $theme-purple;
+}
 .w-15 {
   width: 5%;
   @include respond-to('xs') {
@@ -79,6 +83,9 @@
 
 .font-13 {
   font-size: 13px;
+}
+.inline {
+  display: inline !important;
 }
 // .arrow {
 //   border: solid black;

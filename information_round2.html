@@ -103,7 +103,7 @@
               <form class="selectExam row">
                 <div class="col-sm-6">
                   <div class="form-group mb-4">
-                    <label for="selectExamType">Please select exam</label>
+                    <label for="selectExamType">Please select an exam</label>
                     <select class="form-control" id="selectExamType">
                       <option>APV Level 1:Perform</option>
                       <option>APV Level 2:Perform</option>
@@ -440,10 +440,18 @@
                   </div>
                   <div class="row m-0 px-3 pt-0 pb-3 bg-lightgray">
                     <div class="col-12 p-0">
-                      <div class="text-center float-sm-right mx-5 mx-sm-0">
+                      <div class="row text-center float-sm-right mx-5 mx-sm-0">
                         <!-- <button type="button" class="btn-sm customBtn customBtn-remove mr-3" name="button"> Remove </button> -->
-                        <button type="button" class="btn-sm customBtn customBtn-purple d-none d-sm-block" name="button"><span class="iconic iconic-circle-check mr-2"></span>Save examinee 1</button>
-                        <button type="button" class="btn-block btn-md py-2 mb-2 customBtn customBtn-purple d-sm-none" name="button"><span class="iconic iconic-circle-check mr-3"></span>Save examinee 1</button>
+                        <div class="col">
+                          <button type="button" class="btn-sm customBtn customBtn-purple d-none d-sm-block px-1" name="button"><span class="iconic iconic-circle-check mr-2"></span>Save & add another</button>
+                          <!-- mobile -->
+                          <button type="button" class="btn-block btn-md py-2 mb-2 customBtn customBtn-purple d-sm-none" name="button"><span class="iconic iconic-circle-check mr-3"></span>Save & add another</button>
+                        </div>
+                        <div class="col">
+                          <button type="button" class="btn-sm customBtn customBtn-purple d-none d-sm-block mr-0 px-1" name="button"><span class="iconic iconic-circle-check mr-2"></span>Save examinee 1</button>
+                          <!-- mobile -->
+                          <button type="button" class="btn-block btn-md py-2 mb-2 customBtn customBtn-purple d-sm-none" name="button"><span class="iconic iconic-circle-check mr-3"></span>Save examinee 1</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -473,16 +481,19 @@
       <!-- examinee details ends here -->
 
       <!-- next and previous btns -->
-      <div class="container my-4">
-        <hr class="mx-lg-5 px-5">
+      <div class="container mt-2">
         <div class="mx-lg-5">
           <div class="col-sm-12 px-0 mb-4">
             <label class="font-weight-light font-13 customCheckbox">
-              I certify that if this booking is for different person than me, that person has given me his or her consent to use their personal information required for this booking.
+              I certify that if this booking is for a different person than me, that person has given me his or her consent to use their personal information required for this booking.
               <input type="checkbox">
               <span class="checkmark"></span>
             </label>
           </div>
+        </div>
+      </div>
+      <div class="container my-4">
+        <div class="mx-lg-5">
           <div class="col-sm-12 px-0">
             <button type="button" class="btn-sm customBtn customBtn-purple box-shadow-purple" name="button" onclick="location.href='information_round2.html'"><span class="mr-2 iconic iconic-document"></span>Add another exam</button>
             <div class="float-right mb-5">

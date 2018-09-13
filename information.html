@@ -82,7 +82,7 @@
               <form class="selectExam row">
                 <div class="col-sm-6">
                   <div class="form-group mb-4">
-                    <label for="selectExamType">Please select exam</label>
+                    <label for="selectExamType">Please select an exam</label>
                     <select class="form-control" id="selectExamType">
                       <option>APV Level 1:Perform</option>
                       <option>APV Level 2:Perform</option>
@@ -264,7 +264,7 @@
                       <!-- select date and time - extra small screens - > 576 starts here -->
                       <div class="selectDateTime-sm d-sm-none">
                         <h6 class="Quarion-Book mb-2">Please select a flexible date</h6>
-                        <div class="selectFlexibleDate card-deck">
+                        <div class="selectFlexibleDateInfo card-deck">
                           <!-- option 1 -->
                           <a class="card mx-2 box-shadow border">
                             <div class="card-body selectDateTime">
@@ -452,16 +452,19 @@
       <!-- examinee details ends here -->
 
       <!-- next and previous btns -->
-      <div class="container my-4">
-        <hr class="mx-lg-5 px-5">
+      <div class="container mt-2">
         <div class="mx-lg-5">
           <div class="col-sm-12 px-0 mb-4">
             <label class="font-weight-light font-13 customCheckbox">
-              I certify that if this booking is for different person than me, that person has given me his or her consent to use their personal information required for this booking.
+              I certify that if this booking is for a different person than me, that person has given me his or her consent to use their personal information required for this booking.
               <input type="checkbox">
               <span class="checkmark"></span>
             </label>
           </div>
+        </div>
+      </div>
+      <div class="container my-4">
+        <div class="mx-lg-5">
           <div class="col-sm-12 px-0">
             <button type="button" class="btn-sm customBtn customBtn-purple box-shadow-purple" name="button" onclick="location.href='information_round2.html'"><span class="mr-2 iconic iconic-document"></span>Add another exam</button>
             <div class="float-right mb-5">
@@ -488,13 +491,8 @@
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-      jQuery(function () {
-        jQuery('[data-toggle="popover"]').popover({
-        });
-      });
-
     $(document).ready(function(){
-      $('.selectFlexibleDate').slick({
+      $('.selectFlexibleDateInfo').slick({
         dots: true,
         infinite: true,
         speed: 300,
