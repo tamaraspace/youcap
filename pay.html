@@ -65,32 +65,74 @@
         </div>
       </section>
 
-      <!-- success msg -->
+      <!-- credit card details -->
       <section class="container">
         <div class="card mx-lg-5 border box-shadow">
           <div class="card-body">
             <form class="coordinatorEmail row">
               <div class="col-sm-6">
-                <div class="form-group mb-3">
-                  <label for="email" class="Quarion-Book">Enter your e-mail address</label>
-                  <input type="email" class="form-control" id="email" placeholder="jon@example.com">
+                <div class="form-group mb-4">
+                  <label for="firstName" class="Quarion-Book">Card holder's name</label>
+                  <input type="text" class="form-control" id="cardholdersFirstName" placeholder="Tony Stark">
                 </div>
               </div>
+              <div class="col-sm-6">
+                <div class="form-group mb-4">
+                  <label for="lastName" class="Quarion-Book">Card number</label>
+                  <input type="number" class="form-control" id="cardNumber" placeholder="1234 5678 1234 5678">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group mb-4">
+                      <label for="mobilePhone" class="Quarion-Book">Valid until</label>
+                      <!-- replace with date picker -->
+                      <select class="form-control" id="cardValidityPeriod">
+                        <option>December 2020</option>
+                        <option>December 2020</option>
+                        <option>December 2020</option>
+                        <option>December 2020</option>
+                        <option>December 2020</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group mb-4">
+                      <label for="mobilePhone" class="Quarion-Book">CVV
+                        <a tabindex="0" role="button" class="border rounded-circle px-2 py-1 bg-lightgray ml-1" data-toggle="popover" data-trigger="focus" title="CVV" data-placement="right" data-content="Visa, MasterCard, or Discover:
+                          This 3-digit number is on the back of the card next to the signature panel.
+                          American Express: This 4-digit number is on the front of the card above the credit card number.">?</a>
+                      </label>
+                      <input type="number" class="form-control" id="cvv" placeholder="234">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group mb-5">
+                  <label for="email" class="Quarion-Book">E-mail address</label>
+                  <input type="email" class="form-control" id="email" placeholder="tony@stark.com">
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <label class="font-weight-light font-13 customCheckbox">
+                  I accept the <a href="" class="Quarion-Book underline" data-toggle="modal" data-target="#termsConditions">terms and conditions</a>
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
             </form>
-            <div class="mt-4">
-              <h6 class="Quarion-Book text-gray mb-3">Please continue to Stripe - Online payment processing for your payment</h6>
-              <button type="button" class="btn-sm customBtn customBtn-special" name="button" onclick="location.href='success.html'">Continue</button>
-            </div>
           </div>
         </div>
       </section>
-
-      <!-- back btn -->
+      <!-- next and previous btns -->
       <div class="container my-4">
         <div class="mx-lg-5">
-          <div class="col-sm-12 px-0">
-            <div class="float-right mb-5">
-              <button type="button" class="btn-sm customBtn text-dark pr-0" name="button" onclick="location.href='summary.html'"><span class="mr-2 iconic iconic-arrow-left-fill-large-oblique"></span> Previous step </button>
+          <div class="col-xs-12 px-0">
+            <div class="float-sm-right mb-5">
+              <button type="button" class="btn-sm customBtn text-dark mr-3 pl-0" name="button" onclick="location.href='summary.html'"><span class="mr-2 iconic iconic-arrow-left-fill-large-oblique"></span> Previous step </button>
+              <button type="button" class="btn-sm customBtn customBtn-special float-right" name="button" onclick="location.href='success.html'">Pay now <span class="ml-2 iconic iconic-arrow-right-fill-large-oblique"></span></button>
             </div>
           </div>
         </div>
@@ -102,29 +144,45 @@
       </div>
     </footer>
 
-    <!-- delete modal -->
-    <div class="modal fade" id="examDeleteModal" tabindex="-1" role="dialog" aria-labelledby="examDeleteModal" aria-hidden="true">
+    <!-- terms and conditions modal -->
+    <div class="modal fade" id="termsConditions" tabindex="-1" role="dialog" aria-labelledby="termsConditionsModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Remove APV Level1:Perform ?</h5>
+            <h5 class="modal-title Quarion-Book" id="termsConditionsLabel">Terms and conditions</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            Are you sure, you want to remove this exam? All the exam details will be removed permanently.
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas urna dui, laoreet ut dolor iaculis, auctor tincidunt dolor. Pellentesque interdum, lacus ac mattis convallis, est nibh viverra ipsum, ac posuere risus dolor eget odio. Quisque sit amet imperdiet elit. Donec id mi sed neque pretium vehicula lobortis a leo. Donec sit amet vehicula tortor. Etiam id molestie mi. Nunc vehicula ut nulla id iaculis.
+            </p>
+            <p>
+              Mauris id lacus libero. Aliquam ullamcorper eget nunc vitae feugiat. Phasellus vestibulum feugiat nisi nec fringilla. Pellentesque nulla purus, pulvinar id sem dignissim, varius ultrices lacus. Vivamus at cursus velit, id cursus quam. Sed at vehicula lacus. Aenean viverra ligula ut orci suscipit, ut eleifend lectus tempor. Duis vel arcu magna. Nam ornare consectetur erat, sed consequat lorem tincidunt id. Morbi tincidunt felis elit, vulputate eleifend massa tincidunt sed. Donec in nulla tempor, dapibus orci nec, suscipit metus. Phasellus dignissim turpis mauris, ut blandit justo vehicula sed. Morbi convallis sapien id aliquet sodales.
+            </p>
+            <p class="mb-0">
+              Sed fringilla pellentesque tellus et elementum. Nulla malesuada euismod felis, vitae facilisis odio eleifend at. Aenean molestie mauris leo, quis convallis urna consequat at. Quisque fringilla at nisi a scelerisque. Duis sapien eros, porta at congue ut, dapibus vel magna. Donec pharetra odio id commodo molestie. Mauris sit amet feugiat justo. Pellentesque vulputate, lectus a malesuada tincidunt, eros sapien fringilla est, at vulputate nunc velit ac tellus. Maecenas sed sem tristique, mattis nibh sed, imperdiet ligula. Ut finibus lacinia ipsum sit amet eleifend. In non laoreet quam. Cras lectus nulla, elementum eu turpis fringilla, feugiat auctor dolor. Aenean varius id felis at dignissim. Nunc sem nisi, semper sit amet vestibulum non, varius at ligula. Duis tincidunt auctor dictum. Nam aliquam metus diam, sed accumsan justo tincidunt nec.
+            </p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn-xs customBtn customBtn-purple">Remove</button>
+            <button type="button" class="btn btn-secondary customBtn-gray" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript">
+      jQuery(function () {
+        jQuery('[data-toggle="popover"]').popover({
+          trigger: 'focus'
+        });
+      });
+    </script>
   </body>
 </html>

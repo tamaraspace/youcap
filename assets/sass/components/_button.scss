@@ -68,6 +68,11 @@
    color: $theme-purple;
    border: 1px solid $theme-purple;
 }
+.customBtn-gray {
+   @include button-bg(white);
+   color: $default-text;
+   border: 1px solid $light-gray;
+}
 .customBtn-special {
   @include button-bg ($dark-purple);
   background: linear-gradient(45deg, rgba($light-purple,1) 0%, rgba($light-blue,1) 100%);
