@@ -74,70 +74,20 @@
       </section>
       <!-- step wizard ends here -->
 
-      <section class="examrow mb-4">
-        <div class="container">
-          <div class="card border box-shadow mx-lg-5">
-            <div class="card-header p-0">
-              <!-- enrolled exams starts here  -->
-              <h6 class="card-subtitle text-dark m-0 py-3 px-3">Selected exams:</h6>
-              <div class="d-flex flex-wrap align-items-center justify-content-start pb-2 mx-3">
-                <div class="badge badge-white mb-2 mr-2">
-                  APV Level 1:Perform 1
-                </div>
-                <div class="badge badge-white mb-2 mr-2">
-                  APV Level 2
-                </div>
-                <div class="badge badge-white mb-2 mr-2">
-                  APV Level 3
-                </div>
-                <div class="badge badge-white mb-2 mr-2">
-                  APV Level 4
-                </div>
-                <a tabindex="0" class="Quarion-Book text-purple mb-2 underline" data-toggle="popover" data-placement="right" data-trigger="focus" title="Selected exams" data-content="APV Level 1:Perform1 | APV Level 1:Perform2 | APV Level 1:Perform3 | APV Level 1:Perform4 | APV Level 1:Perform5 ">5 more >></a>
-              </div>
-              <!-- enrolled exams ends here  -->
-            </div>
-
-            <!-- exam select starts here -->
-            <div class="card-body pb-0">
-              <form class="selectExam row">
-                <div class="col-sm-6">
-                  <div class="form-group mb-4">
-                    <label for="selectExamType">Please select an exam</label>
-                    <select class="form-control" id="selectExamType">
-                      <option>APV Level 1:Perform</option>
-                      <option>APV Level 2:Perform</option>
-                      <option>APV Level 3:Perform</option>
-                      <option>APV Level 4:Perform</option>
-                      <option>APV Level 5:Perform</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group mb-4">
-                    <label for="selectExamType">Number of examinees</label>
-                    <select class="form-control" id="selectExamType">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+      <!-- error starts here -->
+      <div class="container">
+        <div class="alert alert-danger mx-lg-5 text-error" role="alert">
+          Please fill all the fields to continue
         </div>
-      </section>
-      <!-- exam select ends here -->
+      </div>
+      <!-- error ends here -->
 
       <!-- examinee details starts here -->
       <section class="container mb-4">
         <div id="addExamineeDetailsPanel" class="card box-shadow mx-lg-5">
           <div id="addExamineeDetails" class="panel-group">
             <!-- panel 1 starts here -->
-            <div class="panel">
+            <div class="panel panel-error">
               <div class="panel-heading">
                 <h4 class="panel-title px-3">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#addExamineeDetails" href="#addExamineeDetailscollapseOne">
@@ -194,10 +144,54 @@
                   </div>
                   <!-- add exam info -->
                   <div class="row m-0 p-3 bg-lightgray">
-                    <h5 class="Quarion-Book">Exam info</h5>
+                    <h5 class="Quarion-Book mb-0">Exam info</h5>
+                    <div class="container my-3 p-0 bg-gray">
+                      <!-- enrolled exams starts here  -->
+                      <h6 class="card-subtitle Quarion-Book text-dark m-0 py-3 px-3">You have already selected:</h6>
+                      <div class="d-flex flex-wrap align-items-center justify-content-start pb-2 mx-3">
+                        <div class="badge badge-white mb-2 px-2 py-1 mr-2">
+                          <span> APV Level 1 </span>
+                          <a href="" class="inline">
+                            <span class="iconic iconic-x ml-2 rounded-circle border border-purple p-1" title="circle x" aria-hidden="true"></span>
+                          </a>
+                        </div>
+                        <div class="badge badge-white mb-2 px-2 py-1 mr-2">
+                          <span> APV Level 2 </span>
+                          <a href="" class="inline">
+                            <span class="iconic iconic-x ml-2 rounded-circle border border-purple p-1" title="circle x" aria-hidden="true"></span>
+                          </a>
+                        </div>
+                        <div class="badge badge-white mb-2 px-2 py-1 mr-2">
+                          <span> APV Level 3 </span>
+                          <a href="" class="inline">
+                            <span class="iconic iconic-x ml-2 rounded-circle border border-purple p-1" title="circle x" aria-hidden="true"></span>
+                          </a>
+                        </div>
+                        <div class="badge badge-white mb-2 px-2 py-1 mr-2">
+                          <span> APV Level 4 </span>
+                          <a href="" class="inline">
+                            <span class="iconic iconic-x ml-2 rounded-circle border border-purple p-1" title="circle x" aria-hidden="true"></span>
+                          </a>
+                        </div>
+                        <a tabindex="0" class="Quarion-Book text-purple mb-2 mt-1 underline" data-toggle="popover" data-placement="right" data-trigger="focus" title="Selected exams" data-content="APV Level 1:Perform1 | APV Level 1:Perform2 | APV Level 1:Perform3 | APV Level 1:Perform4 | APV Level 1:Perform5 ">5 more ></a>
+                      </div>
+                      <!-- enrolled exams ends here  -->
+                    </div>
                     <div class="container mt-2 px-0">
                       <!-- exam location, booking starts here  -->
                       <form class="sessionDetails row">
+                        <div class="col-sm-12">
+                          <div class="form-group mb-4">
+                            <label for="selectExamType">Please select an exam</label>
+                            <select class="form-control" id="selectExamType">
+                              <option>APV Level 1:Perform</option>
+                              <option>APV Level 2:Perform</option>
+                              <option>APV Level 3:Perform</option>
+                              <option>APV Level 4:Perform</option>
+                              <option>APV Level 5:Perform</option>
+                            </select>
+                          </div>
+                        </div>
                         <div class="col-sm-6">
                           <div class="form-group mb-4">
                             <label for="selectExamType" class="Quarion-Book">Please select the closest location</label>
@@ -442,13 +436,8 @@
                     <div class="col-12 p-0">
                       <div class="row text-center float-sm-right mx-5 mx-sm-0">
                         <!-- <button type="button" class="btn-sm customBtn customBtn-remove mr-3" name="button"> Remove </button> -->
-                        <div class="col">
-                          <button type="button" class="btn-sm customBtn customBtn-purple d-none d-sm-block px-1" name="button"><span class="iconic iconic-circle-check mr-2"></span>Save & add another</button>
-                          <!-- mobile -->
-                          <button type="button" class="btn-block btn-md py-2 mb-2 customBtn customBtn-purple d-sm-none" name="button"><span class="iconic iconic-circle-check mr-3"></span>Save & add another</button>
-                        </div>
-                        <div class="col">
-                          <button type="button" class="btn-sm customBtn customBtn-purple d-none d-sm-block mr-0 px-1" name="button"><span class="iconic iconic-circle-check mr-2"></span>Save examinee 1</button>
+                        <div class="col pr-0 mr-0">
+                          <button type="button" class="btn-sm customBtn customBtn-purple d-none d-sm-block mr-0 px-2" name="button"><span class="iconic iconic-circle-check mr-2"></span>Save examinee 1</button>
                           <!-- mobile -->
                           <button type="button" class="btn-block btn-md py-2 mb-2 customBtn customBtn-purple d-sm-none" name="button"><span class="iconic iconic-circle-check mr-3"></span>Save examinee 1</button>
                         </div>

@@ -41,18 +41,30 @@
   position: absolute;
   width: 1px;
 }
+
+// custom shadows
 .box-shadow {
   box-shadow: rgba(60, 64, 67, .04) 0 1px 2px 0, rgba(60, 64, 67, .1) 0 1px 3px 1px;
 }
 .box-shadow-purple {
   box-shadow: 0 0.15rem 0.75rem 0.05rem rgba(161,130,195,0.75);
 }
+
+// custom text color
 .text-purple {
   color: $theme-purple;
 }
 .text-gray {
   color: darken($gray,10%);
 }
+.text-white {
+  color: white;
+}
+.text-error {
+  color: $error;
+}
+
+// custom badge color
 .badge-gray {
   background-color: $gray;
 }
@@ -61,16 +73,47 @@
   color: $dark-purple;
   border: 1px solid $gray;
 }
+
+// custom borders
+.border-purple {
+  border-color: $dark-purple;
+}
+
+// custom background colors
+.bg-gray {
+  background-color: $gray;
+}
 .bg-lightgray {
   background-color: rgba($gray, 0.25);
 }
 .bg-white {
   background-color: $white;
 }
+
+// custom alerts
 .alert-purple {
   background-color: rgba($light-purple, 0.25);
   color: $theme-purple;
 }
+.panel-error {
+  border: 2px solid $error !important;
+  box-shadow: 0 0.15rem 0.75rem 0.05rem rgba($error,0.5);
+}
+
+// custom font size;
+.font-13 {
+  font-size: 13px;
+}
+
+// other custom styles
+.inline {
+  display: inline !important;
+}
+.underline {
+  text-decoration: underline;
+}
+
+// custom widths
 .w-15 {
   width: 5%;
   @include respond-to('xs') {
@@ -79,16 +122,6 @@
   @include respond-to('small') {
     width: 25%;
   }
-}
-
-.font-13 {
-  font-size: 13px;
-}
-.inline {
-  display: inline !important;
-}
-.underline {
-  text-decoration: underline;
 }
 // .arrow {
 //   border: solid black;

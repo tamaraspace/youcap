@@ -19,6 +19,7 @@
   letter-spacing: 1.25px;
   border-radius: 20px;
   display: inline;
+  line-height: 2;
 }
 .form-control:focus {
   border-color: $light-purple;
@@ -123,7 +124,7 @@ table {
   .panel {
     border-color: $gray;
     margin-top: 0px;
-    border-bottom: none !important;
+    // border-bottom: none !important;
     border-radius: 0.25rem !important;
     a {
       display: block;
