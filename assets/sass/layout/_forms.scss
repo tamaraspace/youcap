@@ -1,6 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+@include placeholder {
+  color: lightgray !important;
+  font-weight: 100;
+}
+
 .customCheckbox {
     display: block;
     position: relative;

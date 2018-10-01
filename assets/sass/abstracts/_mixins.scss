@@ -62,3 +62,10 @@
          + 'Please make sure it is defined in `$breakpoints` map.';
   }
 }
+// placeholder
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}

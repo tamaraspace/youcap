@@ -1,19 +1,5 @@
 // bootstrap class overwrites
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: lightgray !important;
-    font-weight: 100;
-    opacity: 1; /* Firefox */
-}
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: lightgray !important;
-    font-weight: 100;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: lightgray !important;
-    font-weight: 100;
-}
 .badge {
   padding: 0.5em;
   letter-spacing: 1.25px;

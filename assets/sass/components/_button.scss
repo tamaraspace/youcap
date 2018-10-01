@@ -45,6 +45,7 @@
   padding: 5px 20px;
   font-size: 0.75rem;
   letter-spacing: 0.5;
+  cursor: pointer;
 }
 .customBtn-icon {
   background-color: transparent;
@@ -67,6 +68,7 @@
    @include button-bg($white);
    color: $theme-purple;
    border: 1px solid $theme-purple;
+   border-radius: 20px;
 }
 .customBtn-gray {
    @include button-bg(white);
@@ -84,4 +86,9 @@
   border: 1px solid $error;
   padding: 3px 15px;
   text-transform: inherit;
+}
+// disabled
+.customBtn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
