@@ -22,6 +22,7 @@
     <title>YouCap</title>
   </head>
   <body>
+    <!-- <div class="pageLoader"></div> -->
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top youcap-navbar box-shadow-purple">
@@ -179,10 +180,13 @@
               <div id="examineeDetailscollapseOne" class="panel-collapse collapse show">
                 <div class="panel-body p-0">
                   <!-- examinee's personal info -->
-                  <div class="row m-0 p-3 mb-2 bg-lightgray">
+                  <div class="row m-0 p-3 mb-2 bg-lightgray" hidden>
                     <div class="container px-0">
-                      <h5 class="Quarion-Book d-inline">Personal info</h5>
-                      <span class="ml-2"><button type="button" class="btn-md customBtn customBtn-icon" name="button"><span class="iconic iconic-pencil"></span></button></span>
+                      <h5 class="Quarion-Book d-inline">Personal infomation</h5>
+                      <span class="ml-2">
+                        <!-- personal info edit btn -->
+                        <button type="button" class="btn-md customBtn customBtn-icon" name="button"><span class="iconic iconic-pencil"></span></button>
+                      </span>
                       <button type="button" class="float-right btn-sm customBtn customBtn-error" data-toggle="modal" data-target="#examineeDeleteModal" name="button"><span class="iconic iconic-trash"></span></button>
                     </div>
                     <div class="container mt-2 px-0">
@@ -206,6 +210,51 @@
                       </div>
                     </div>
                   </div>
+
+                  <!-- examinee personal info - edit section -->
+                  <div class="row m-0 p-3 mb-2 bg-lightgray">
+                    <div class="container px-0">
+                      <h5 class="Quarion-Book d-inline">Edit personal infomation</h5>
+                      <button type="button" class="float-right customBtn customBtn-sm customBtn-white px-2" name="button"><span class="iconic iconic-circle-check mr-2"></span>save</button>
+                    </div>
+                    <div class="container mt-2 px-0">
+                      <div class="row">
+                        <div class="col-6 col-sm-3 mt-2">
+                          <dt class="text-muted text-uppercase">Name:</dt>
+                          <dd class="mt-1">
+                            <div class="form-group mb-4">
+                              <input type="text" class="form-control" id="summaryName" placeholder="Phil Coulson">
+                            </div>
+                          </dd>
+                        </div>
+                        <div class="col-6 col-sm-3 mt-2">
+                          <dt class="text-muted">Mobile:</dt>
+                          <dd class="mt-1">
+                            <div class="form-group mb-4">
+                              <input type="text" class="form-control" id="summaryPhone" placeholder="123456789">
+                            </div>
+                          </dd>
+                        </div>
+                        <div class="col-6 col-sm-3 mt-2">
+                          <dt class="text-muted">ID number:</dt>
+                          <dd class="mt-1">
+                            <div class="form-group mb-4">
+                              <input type="text" class="form-control" id="summaryId" placeholder="123456789">
+                            </div>
+                          </dd>
+                        </div>
+                        <div class="col-6 col-sm-3 mt-2">
+                          <dt class="text-muted">Id06:</dt>
+                          <dd class="mt-1">
+                            <div class="form-group mb-4">
+                              <input type="text" class="form-control" id="summaryId06" placeholder="BB-123456789">
+                            </div>
+                          </dd>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <!-- examinee's exam info - large screen < 768 -->
                   <div class="row m-0 p-3 bg-lightgray d-none d-md-block">
                     <h5 class="Quarion-Book">Exam info</h5>
