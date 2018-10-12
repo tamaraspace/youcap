@@ -63,6 +63,7 @@
 .customBtn-purple {
    @include button-bg($theme-purple);
    padding: 5px 20px;
+   border: 1px solid $light-purple;
 }
 .customBtn-white {
    @include button-bg($white);
@@ -71,14 +72,14 @@
    border-radius: 20px;
 }
 .customBtn-gray {
-   @include button-bg(white);
+   @include button-bg($light-gray);
    color: $default-text;
-   border: 1px solid $light-gray;
+   border: 1px solid $gray;
 }
 .customBtn-special {
   @include button-bg ($dark-purple);
   background: linear-gradient(45deg, rgba($light-purple,1) 0%, rgba($light-blue,1) 100%);
-  box-shadow: 0 0.15rem 2rem 0.05rem rgba($light-purple,0.65);
+  box-shadow: 0 0.15rem 2rem 0.05rem rgba($light-purple,0.5);
 }
 .customBtn-remove {
   @include button-bg($white);

@@ -4,46 +4,24 @@
     @extend .box-shadow;
   }
 }
-.summarySlider, .selectFlexibleDate, .selectFlexibleDate2 {
-  .slick-track {
-    // padding: 10px 0;
-    .slick-slide {
-
-      &.active, &:active {
-        // @extend .box-shadow-purple;
-        // background-color: $light-purple;
-        // color: $white !important;
-        &.hover, &:hover {
-          text-decoration: none;
-          border-color: inherit !important;
-          // pointer-events: none;
-        }
-        &.focus, &:focus {
-          outline: none;
-        }
-        h5 {
-          color: $theme-purple;
-        }
-      }
-      &.hover, &:hover {
-        border-color: $theme-purple !important;
-        text-decoration: none;
-      }
-      &.focus, &:focus {
-        outline: none;
-      }
-    }
-    .active {
-      color: $theme-purple !important;
-      @extend .box-shadow-purple;
-      background-color: $light-purple;
-      // color: $white !important;
-      &.card {
-        color: $white-2 !important;
-      }
-      h5 {
-        color: $theme-purple !important;
-      }
-    }
-  }
+// .slick-slide {
+//   margin-left: 15px;
+//   margin-right: 15px;
+// }
+.slick-prev, .slick-next {
+  top: 35%;
 }
+// .slick-next {
+//   right: -20px;
+//
+// }
+// .slick-prev {
+//   left: -20px;
+//
+// }
+// .slick-prev:before {
+//   content: "\e156";
+// }
+// .slick-next:before {
+//   content: "\e157";
+// }

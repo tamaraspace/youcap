@@ -58,14 +58,6 @@
     background-image: url("../img/loading.gif");
     background-repeat: no-repeat;
     background-position: center;
-    // .spinner-240 {
-    //   position: absolute;
-    //   top: 50%;
-    //   left: 50%;
-    //   height: 100px;
-    //   width: 100px;
-    //   border-color: $dark-purple $theme-purple $light-purple;
-    // }
 }
 // custom shadows
 .box-shadow {
@@ -87,6 +79,13 @@
 }
 .text-error {
   color: $error;
+}
+.text-error50 {
+  color: rgba($error, 0.5);
+}
+.text-bold {
+  font-family: Quarion-Book;
+  font-weight: 800;
 }
 
 // custom badge color

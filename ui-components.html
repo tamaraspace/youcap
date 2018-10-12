@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ascentic">
+    <link rel="icon" href="#">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+    <!-- custom css -->
+    <link href="assets/theme/icons/iconic-glyphs.css" rel="stylesheet">
+    <link href="assets/theme/icons/iconic-bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/customdev.css">
+    <title>YouCap</title>
+  </head>
+  <body>
+    <!-- page loaders -->
+    <!-- <div class="pageLoader"></div> -->
+
+    <!--- error messages -->
+    <!-- all fields mandatory error starts here -->
+    <div class="container">
+      <div class="alert alert-danger mx-lg-5 text-error" role="alert">
+        Please fill all the fields to continue
+      </div>
+    </div>
+    <!-- all fields mandatory error ends here -->
+
+    <!-- modal buttons -->
+    <div class="container mt-5">
+      <div class="row mx-5">
+        <div class="col">
+          <!-- success modal btn-->
+          <button type="button" class="btn-sm customBtn customBtn-purple" name="button" data-toggle="modal" data-target="#success">Success modal</button>
+        </div>
+        <div class="col">
+          <!-- success modal btn-->
+          <button type="button" class="btn-sm customBtn customBtn-purple" name="button" data-toggle="modal" data-target="#error">Error modal</button>
+        </div>
+      </div>
+    </div>
+    <!-- success modal -->
+    <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="saveSuccessModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="successAnim text-center">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+                <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"/>
+                <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+              </svg>
+              <h4 class="success">Successfully saved Examinee 1 </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- error modal -->
+    <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="errorModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="errorModalLabel">Delete exam 1?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Are you sure, you want to delete this exam? All the exam details will be removed permanently.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-xs customBtn customBtn-purple">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+  </body>
+</html>
