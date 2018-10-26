@@ -1,0 +1,191 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ascentic">
+    <link rel="icon" href="#">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+    <!-- custom css -->
+    <link href="assets/theme/icons/iconic-glyphs.css" rel="stylesheet">
+    <link href="assets/theme/icons/iconic-bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/customdev.css">
+
+    <title>YouCap Dashboard</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">YouCap</a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid mainWrapper h-100">
+      <div class="row h-100">
+        <!-- left navigation starts here-->
+        <!-- <nav class="col-md-2 d-none d-md-block bg-white sidebar h-100">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Office list <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Sessions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="shopping-cart"></span>
+                  Other 1
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="users"></span>
+                  Other 2
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Other 3
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav> -->
+        <!-- left navigation ends here -->
+
+        <main role="main" class="col px-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Office list</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Exam center one</li>
+              </ol>
+            </nav>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-group ">
+                <button class="btn-sm customBtn customBtn-purple box-shadow-purple" data-toggle="modal" data-target="#addoffice">Edit office</button>
+                <!-- switch comes here -->
+              </div>
+            </div>
+          </div>
+          <section class="container mb-4">
+            <div class="card box-shadow">
+              <!-- google map comes here -->
+            </div>
+          </section>
+          <!-- exam center details starts here -->
+          <section class="container mb-4">
+            <div class="card box-shadow">
+              <div class="row m-0 p-3">
+                <div class="container px-0">
+                  <h5 class="Quarion-Book d-inline">Exam center one details</h5>
+                </div>
+                <div class="container px-0">
+                  <div class="row">
+                    <div class="col-6 col-sm-3 col-lg-2 mt-2">
+                      <dt class="text-muted">Address:</dt>
+                      <dd class="text-dark">221B Baker street</dd>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mt-2">
+                      <dt class="text-muted">City:</dt>
+                      <dd class="text-dark">London</dd>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mt-2">
+                      <dt class="text-muted">Postal code:</dt>
+                      <dd class="text-dark">70100</dd>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mt-2">
+                      <dt class="text-muted">Country:</dt>
+                      <dd class="text-dark">United Kingdom</dd>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mt-2">
+                      <dt class="text-muted">Latitude:</dt>
+                      <dd class="text-dark">48.98494885</dd>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mt-2">
+                      <dt class="text-muted">Longitude:</dt>
+                      <dd class="text-dark">-102.342444</dd>
+                    </div>
+                    <div class="col-6 col-sm-3 col-lg-2 mt-2">
+                      <dt class="text-muted">Phone number:</dt>
+                      <dd class="text-dark">1234567890</dd>
+                    </div>
+                    <div class="col-12 col-sm-6 mt-2">
+                      <dt class="text-muted">Special Note:</dt>
+                      <dd class="text-dark">Subway will be closed on the north east side of the building</dd>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- exam center details ends here -->
+          <!-- add room starts here -->
+          <section class="container mb-4">
+            <div class="card box-shadow">
+              <div class="row m-0 p-3">
+                <div class="container px-0">
+                  <h5 class="Quarion-Book d-inline">Add room</h5>
+                </div>
+                <div class="container px-0">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group mb-3">
+                        <label for="lastName" class="Quarion-Book text-uppercase">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="221B Baker street">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group mb-3">
+                        <label for="mobilePhone" class="Quarion-Book text-uppercase">city</label>
+                        <input type="number" class="form-control" id="city" placeholder="London">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- add room ends here -->
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <span class="text-muted">© 2018 - YouCap. All Rights Reserved.</span>
+        </div>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+
+  </body>
+</html>

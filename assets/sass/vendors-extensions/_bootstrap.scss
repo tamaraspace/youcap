@@ -42,12 +42,12 @@ table {
   background-color: rgba($light-gray,0.25) !important;
   th, td {
     vertical-align: middle !important;
-    padding: 0.5rem 1rem !important;
+    padding: 1rem !important;
     border-top: none !important;
     border-bottom: 2px solid rgba($light-gray, 0.35);
   }
   th {
-    background-color: $white;
+    background-color: white;
     font-size: 80%;
     // color: $gray;
   }
@@ -64,6 +64,9 @@ table {
       }
     }
   }
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: white;
 }
 .dropdown-item {
   display: unset;
@@ -167,4 +170,15 @@ table {
 }
 .dropdown-divider {
   margin: 5px;
+}
+
+.page-link {
+  color: $theme-purple;
+}
+.breadcrumb {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+dd {
+  margin-bottom: 0;
 }

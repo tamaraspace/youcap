@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.sidebar {
+  ul {
+    li {
+      border-bottom: 1px solid $light-gray;
+      padding: 1rem;
+    }
+  }
+}

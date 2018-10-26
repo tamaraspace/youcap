@@ -12,8 +12,7 @@
 
 @import
     'vendors-extensions/bootstrap',
-    'vendors-extensions/slick',
-    'vendors-extensions/stripe';
+    'vendors-extensions/slick';
 
 
 // 3. Base stuff
@@ -27,6 +26,7 @@
 @import
   'layout/header',
   'layout/footer',
+  'layout/nav',
   'layout/forms';
 
 // 5. Components
@@ -36,9 +36,7 @@
 
 // 6. Page-specific styles
 @import
-  'pages/information',
-  'pages/summary',
-  'pages/loggedinUserChangeOrder';
+  'pages/information';
 
 // 7. Themes
 @import

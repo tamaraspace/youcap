@@ -41,6 +41,9 @@ $white: rgb(255,255,255) !default;
 $white-2: rgb(253,245,253) !default;
 
 /// @type Color
+$off-white: #f5f6fa !default;
+
+/// @type Color
 $gray: rgb(207,216,220) !default; //bootstrap secondary color
 
 /// @type Color
@@ -58,7 +61,7 @@ $error: #D06079 !default;
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1024px !default;
+$max-width: 100% !default;
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

@@ -55,13 +55,14 @@
     width: 100%;
     height: 100%;
     background-color: rgba(white, 0.95);
-    background-image: url("../img/loading.gif");
+    background-image: url("../img/_loading.gif");
     background-repeat: no-repeat;
     background-position: center;
 }
 // custom shadows
 .box-shadow {
-  box-shadow: rgba(60, 64, 67, .04) 0 1px 2px 0, rgba(60, 64, 67, .1) 0 1px 3px 1px;
+  // box-shadow: rgba(60, 64, 67, .04) 0 1px 2px 0, rgba(60, 64, 67, .1) 0 1px 3px 1px;
+  box-shadow: 0 1px 20px 0 rgba(202, 202, 205, 0.56);
 }
 .box-shadow-purple {
   box-shadow: 0 0.15rem 0.75rem 0.05rem rgba(161,130,195,0.75);
