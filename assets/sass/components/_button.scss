@@ -48,10 +48,11 @@
   cursor: pointer;
 }
 .customBtn-icon {
-  background-color: transparent;
-  border: none;
-  color: $dark-purple;
-  padding: 0;
+  @include button-bg($off-white);
+  color: $theme-purple;
+  padding: 4px 7px;
+  border-radius: 20px;
+  text-transform: inherit;
 }
 
 .customBtn-error {
@@ -82,10 +83,10 @@
   box-shadow: 0 0.15rem 2rem 0.05rem rgba($light-purple,0.5);
 }
 .customBtn-remove {
-  @include button-bg($white);
+  @include button-bg($off-white);
   color: $error;
-  border: 1px solid $error;
-  padding: 3px 15px;
+  padding: 4px 7px;
+  border-radius: 20px;
   text-transform: inherit;
 }
 // disabled
