@@ -63,7 +63,7 @@
 }
 .customBtn-purple {
    @include button-bg($theme-purple);
-   padding: 5px 20px;
+   padding: 5px 10px;
    border: 1px solid $light-purple;
 }
 .customBtn-white {
