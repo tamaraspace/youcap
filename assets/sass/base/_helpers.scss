@@ -79,7 +79,7 @@
   color: white;
 }
 .text-error {
-  color: $error;
+  color: $error !important;
 }
 .text-error50 {
   color: rgba($error, 0.5);

@@ -17,27 +17,27 @@
   }
 
 }
-.nav-tabs {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  background: $theme-purple;
-  border: none;
-  .nav-item {
-    margin: 0;
-  }
-  .nav-link {
-    border: none;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    padding: 1rem;
-    transition: color .35s ease-out;
-    margin-top: 0;
-    color: $white-2;
-    &.active {
-      color: $theme-purple !important;
-    }
-  }
-}
+// .nav-tabs {
+//   border-top-left-radius: 0.5rem;
+//   border-top-right-radius: 0.5rem;
+//   background: $theme-purple;
+//   border: none;
+//   .nav-item {
+//     margin: 0;
+//   }
+//   .nav-link {
+//     border: none;
+//     border-top-left-radius: 0.5rem;
+//     border-top-right-radius: 0.5rem;
+//     padding: 1rem;
+//     transition: color .35s ease-out;
+//     margin-top: 0;
+//     color: $white-2;
+//     &.active {
+//       color: $theme-purple !important;
+//     }
+//   }
+// }
 table {
   background-color: rgba($light-gray,0.25) !important;
   th, td {

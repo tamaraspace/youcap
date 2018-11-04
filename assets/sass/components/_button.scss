@@ -75,6 +75,7 @@
 .customBtn-gray {
    @include button-bg($light-gray);
    color: $default-text;
+   padding: 5px 10px;
    border: 1px solid $gray;
 }
 .customBtn-special {
