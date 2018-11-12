@@ -87,7 +87,7 @@ table {
 }
 
 // accordion
-#examineeFullInfoPanel, #addExamineeDetailsPanel, #loggedinUserChangeOrderPanel {
+#examineeFullInfoPanel, #addExamineeDetailsPanel, #loggedinUserChangeOrderPanel, #bookedslotsPanel {
   .panel-heading {
     border-bottom: 1px solid $light-gray !important;
     border-top: 1px solid $light-gray !important;
@@ -117,7 +117,7 @@ table {
     border-radius: 0.25rem !important;
     a {
       display: block;
-      margin: 10px 0;
+      // margin: 10px 0;
     }
     .panel-heading {
       a {

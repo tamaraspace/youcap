@@ -26,7 +26,11 @@ h6 {
 *::after {
   box-sizing: inherit;
 }
-
+// @include media-breakpoint-up(md) {
+//   .container {
+//     width: 1200px;
+//   }
+// }
 a {
   text-decoration: none;
   color: $theme-purple;
