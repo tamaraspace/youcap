@@ -1,0 +1,16 @@
+// monitoring list custom Sass
+
+.rowHighlight {
+  tr.active {
+    background-color: rgba($light-purple,0.25) !important;
+    border-bottom: 2px solid $white;
+    border-left: 3px solid $theme-purple;
+    color: rgba($default-text,0.5);
+    .customBtn-sm {
+      background-color: transparent;
+      border: none;
+      color: $theme-purple;
+      font-weight: bold;
+    }
+  }
+}

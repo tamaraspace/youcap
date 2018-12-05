@@ -48,8 +48,11 @@ table {
   }
   th {
     background-color: white;
-    font-size: 80%;
+    // font-size: 80%;
     // color: $gray;
+  }
+  td {
+    // width: 15%;
   }
 }
 .table {
@@ -178,6 +181,7 @@ table {
 .breadcrumb {
   background-color: transparent;
   margin-bottom: 0;
+  padding-left: 0;
 }
 dd {
   margin-bottom: 0;
