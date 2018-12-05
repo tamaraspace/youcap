@@ -48,11 +48,12 @@
   cursor: pointer;
 }
 .customBtn-icon {
-  @include button-bg($off-white);
+  @include button-bg(white);
   color: $theme-purple;
   padding: 4px 7px;
   border-radius: 20px;
   text-transform: inherit;
+  border: 1px solid $off-white;
 }
 
 .customBtn-error {
