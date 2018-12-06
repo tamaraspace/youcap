@@ -2,7 +2,7 @@
 
 .rowHighlight {
   tr.active {
-    background-color: rgba($light-purple,0.25) !important;
+    background-color: rgba($light-purple,0.05) !important;
     border-bottom: 2px solid $white;
     border-left: 3px solid $theme-purple;
     color: rgba($default-text,0.5);

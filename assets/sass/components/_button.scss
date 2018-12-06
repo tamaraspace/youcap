@@ -37,15 +37,17 @@
  cursor: pointer;
  background-color: transparent;
 }
-.customBtn-sm {
+%customBtn-sm-shared {
   @include button-bg($white-2);
-  // @extend .box-shadow-purple;
   border: 1px solid $light-purple;
   color: $theme-purple;
   padding: 5px 20px;
   font-size: 0.75rem;
   letter-spacing: 0.5;
   cursor: pointer;
+}
+.customBtn-sm {
+  @extend %customBtn-sm-shared;
 }
 .customBtn-icon {
   @include button-bg(white);
@@ -95,4 +97,94 @@
 .customBtn:disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+// play and pause toggle btn
+.toggleBtn {
+	display: none;
+	+ .playpauseToggletgBtn {
+		outline: 0;
+		display: inline-block;
+		width: 5em;
+		height: 2em;
+		position: relative;
+		cursor: pointer;
+    user-select: none;
+		&:after,
+    &:before {
+			position: relative;
+			display: inline-block;
+			content: "";
+			// width: 50%;
+			// height: 100%;
+		}
+		&:after {
+			left: 0;
+		}
+		&:before {
+			display: none;
+		}
+	}
+	&:checked + .playpauseToggletgBtn:after {
+		left: 50%;
+	}
+}
+.playpauseToggle {
+	+ .playpauseToggletgBtn {
+    vertical-align: middle;
+    letter-spacing: 1;
+    font-size: 14px;
+    // padding-top: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+		overflow: hidden;
+		backface-visibility: hidden;
+		transition: all .2s ease;
+		background: $light-purple;
+    box-shadow: 0 1px 20px 0 rgba(202, 202, 205, 0.56);
+		&:after,
+    &:before {
+			display: inline-block;
+			transition: all .2s ease;
+			width: 100%;
+			text-align: center;
+			position: absolute;
+			line-height: 2em;
+			color: white;
+		}
+		&:after {
+			left: 100%;
+			content: attr(data-tg-on);
+		}
+		&:before {
+			left: 0;
+			content: attr(data-tg-off);
+		}
+		&:active {
+			background: $light-purple;
+			&:before {
+				left: -10%;
+			}
+		}
+	}
+	&:checked + .playpauseToggletgBtn {
+    background: $theme-purple;
+    &:before {
+      left: -100%;
+    }
+    &:after {
+      left: 0;
+    }
+    &:active:after {
+      left: 10%;
+    }
+	}
+}
+
+.customStopBtn {
+  font-size: 14px;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: $theme-purple;
+    letter-spacing: 0.5px;
 }

@@ -112,7 +112,10 @@
   background-color: rgba($gray, 0.25);
 }
 .bg-white {
-  background-color: $white;
+  background-color: white;
+}
+.bg-white2 {
+  background-color: $white-2 !important;
 }
 .bg-offWhite {
   background-color: $off-white;
