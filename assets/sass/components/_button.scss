@@ -33,7 +33,7 @@
  font-weight: 100;
  letter-spacing: 1px;
  outline: 0 !important;
- border: none;
+ // border: none;
  cursor: pointer;
  background-color: transparent;
 }
@@ -72,8 +72,8 @@
 .customBtn-white {
    @include button-bg($white);
    color: $theme-purple;
-   border: 1px solid $theme-purple;
-   border-radius: 20px;
+   // border: 1px solid $theme-purple;
+   // border-radius: 20px;
 }
 .customBtn-gray {
    @include button-bg($light-gray);
@@ -92,6 +92,7 @@
   padding: 4px 7px;
   border-radius: 20px;
   text-transform: inherit;
+  border: $off-white;
 }
 // disabled
 .customBtn:disabled {
