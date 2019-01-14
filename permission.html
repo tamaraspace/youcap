@@ -1,0 +1,737 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ascentic">
+    <link rel="icon" href="#">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
+    <!-- custom css -->
+    <link href="assets/theme/icons/iconic-glyphs.css" rel="stylesheet">
+    <link href="assets/theme/icons/iconic-bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <link rel="stylesheet" href="assets/css/customdev.css">
+
+    <title>YouCap Dashboard</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">YouCap</a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid mainWrapper">
+      <div class="row h-100">
+        <!-- left navigation starts here-->
+        <!-- <nav class="col-md-2 d-none d-md-block bg-white sidebar h-100">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <span data-feather="home"></span>
+                  Office list <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file"></span>
+                  Sessions
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="shopping-cart"></span>
+                  Other 1
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="users"></span>
+                  Other 2
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Other 3
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav> -->
+        <!-- left navigation ends here -->
+
+        <!-- tab content starts here -->
+        <div class="container">
+          <ul class="nav nav-tabs w-100" id="permissions-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="rolesTab" data-toggle="pill" href="#rolesContent" role="tab" aria-controls="rolesContent" aria-selected="true">Roles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="areasTab" data-toggle="pill" href="#areasContent" role="tab" aria-controls="areasContent" aria-selected="false">Areas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="featureTab" data-toggle="pill" href="#featureContent" role="tab" aria-controls="featureContent" aria-selected="false">Feature permission</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content container" id="permissionsContent">
+          <div class="tab-pane fade show active" id="rolesContent" role="tabpanel" aria-labelledby="rolesTab">
+            <!-- roles table content comes here -->
+            <div class="col px-4">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h3 class="h2">Roles</h3>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                  <div class="btn-group ">
+                    <!-- <button class="btn-sm customBtn customBtn-sm customBtn-white mr-3"><span class="iconic iconic-funnel mr-2" title="funnel" aria-hidden="true"></span>Filter</button> -->
+                    <button class="btn-sm customBtn customBtn-purple box-shadow-purple" data-toggle="modal" data-target="#addRole">+ Add role</button>
+                  </div>
+                </div>
+              </div>
+              <!-- roles list starts here -->
+              <div class="table-responsive table-hover mb-0">
+                <table class="table table-striped table-sm">
+                  <thead class="text-uppercase text-gray">
+                    <tr>
+                      <th>Roles</th>
+                      <th>Description</th>
+                      <th>Areas</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Monitorer
+                      </td>
+                      <td>
+                        Can monitor sessions
+                      </td>
+                      <td>
+                        Constructing questions, Managing offices and sessions, Managing the organization
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Constructor
+                      </td>
+                      <td>
+                        Writes questions in the question construction module
+                      </td>
+                      <td>
+                        Constructing questions, Managing the organization
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Reviewer
+                      </td>
+                      <td>
+                        Review questions
+                      </td>
+                      <td>
+                        Managing offices and sessions, Managing the organization
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Admin
+                      </td>
+                      <td>
+                        Set permission
+                      </td>
+                      <td>
+                        Managing the organization
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Super admin
+                      </td>
+                      <td>
+                        Handles everything
+                      </td>
+                      <td>
+                        Constructing questions, Managing offices and sessions, Managing the organization
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- session list ends here -->
+
+              <!-- pagination starts here -->
+              <nav aria-label="Page navigation container">
+                <div class="row">
+                  <div class="col">Showing: <a href="">25 roles</a></div>
+                  <ul class="pagination col mx-auto justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="col text-right">Total roles: 100</div>
+                </div>
+              </nav>
+              <!-- pagination ends here -->
+            </div>
+          </div>
+          <div class="tab-pane fade" id="areasContent" role="tabpanel" aria-labelledby="areasTab">
+            <!-- areas table content comes here -->
+            <div class="col px-4">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h3 class="h2">Areas</h3>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                  <div class="btn-group ">
+                    <!-- <button class="btn-sm customBtn customBtn-sm customBtn-white mr-3"><span class="iconic iconic-funnel mr-2" title="funnel" aria-hidden="true"></span>Filter</button> -->
+                    <button class="btn-sm customBtn customBtn-purple box-shadow-purple" data-toggle="modal" data-target="#addArea">+ Add area</button>
+                  </div>
+                </div>
+              </div>
+              <!-- session list starts here -->
+              <div class="table-responsive table-hover mb-0">
+                <table class="table table-striped table-sm">
+                  <thead class="text-uppercase text-gray">
+                    <tr>
+                      <th>Areas</th>
+                      <th>Description</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Constructing questions
+                      </td>
+                      <td>
+                        Working with things related to the construction of questions
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Managing offices and sessions
+                      </td>
+                      <td>
+                        Working with things related to creating and editing information regarding offices, rooms etc. and planning sessions
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Managing the organization
+                      </td>
+                      <td>
+                        Dealing with the overhead of the organization in our system (i.e creating users, editing permissions for existing users)
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Constructing questions
+                      </td>
+                      <td>
+                        Working with things related to the construction of questions
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Constructing questions
+                      </td>
+                      <td>
+                        Working with things related to the construction of questions
+                      </td>
+                      <td>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                        <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- session list ends here -->
+
+              <!-- pagination starts here -->
+              <nav aria-label="Page navigation container">
+                <div class="row">
+                  <div class="col">Showing: <a href="">25 Sessions</a></div>
+                  <ul class="pagination col mx-auto justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="col text-right">Total sessions: 100</div>
+                </div>
+              </nav>
+              <!-- pagination ends here -->
+            </div>
+          </div>
+          <div class="tab-pane fade" id="featureContent" role="tabpanel" aria-labelledby="featureTab">
+            <!-- feature permission table content comes here -->
+            <div class="col px-4">
+              <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h3 class="h2">Feature Permission</h3>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                  <div class="btn-group ">
+                    <!-- <button class="btn-sm customBtn customBtn-sm customBtn-white mr-3"><span class="iconic iconic-funnel mr-2" title="funnel" aria-hidden="true"></span>Filter</button> -->
+                    <button class="btn-sm customBtn customBtn-purple box-shadow-purple" data-toggle="modal" data-target="#addFeature">+ Add feature</button>
+                  </div>
+                </div>
+              </div>
+              <!-- feature permission list starts here -->
+              <div id="featurePermissionPanel" class="card box-shadow mt-1">
+                <div id="featurePermissionDetails" class="panel-group">
+                <!-- panel 1 starts here -->
+                  <div class="panel">
+                    <div class="panel-heading py-3">
+                      <h4 class="panel-title px-3 mb-0">
+                        <!-- to open the panel remove collapsed class from a tag and add show class to panel-collapse -->
+                        <a class="accordion-toggle mb-0" data-toggle="collapse" data-parent="#featurePermissionDetails" href="#featurePermissionDetailscollapseOne">
+                          <h5 class="Quarion-Book text-purple mb-0">Constructing questions</h5>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="featurePermissionDetailscollapseOne" class="panel-collapse collapse show">
+                      <div class="panel-body p-2">
+                        <!-- constructing question -->
+                        <div class="row m-0 p-3 bg-offWhite">
+                          <div class="container mt-2 px-0">
+                            <div class="table-responsive table-hover mb-0">
+                              <table class="table table-striped table-sm">
+                                <thead class="text-uppercase text-gray">
+                                  <tr>
+                                    <th>Feature</th>
+                                    <th>Description</th>
+                                    <th>Actions</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      Can access Construction app
+                                    </td>
+                                    <td>
+                                      The user has access to the construction app.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Can create questions
+                                    </td>
+                                    <td>
+                                      The user can create questions in the construction module.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Can access Construction app
+                                    </td>
+                                    <td>
+                                      The user has access to the construction app.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Can create questions
+                                    </td>
+                                    <td>
+                                      The user can create questions in the Construction module.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- Constructing questions -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- panel body ends here -->
+                    </div>
+                  </div>
+                  <!-- panel 1 ends here -->
+
+                  <!-- panel 2 starts here -->
+                  <div class="panel">
+                    <div class="panel-heading py-3">
+                      <h4 class="panel-title px-3 mb-0">
+                        <!-- to open the panel remove collapsed class from a tag and add show class to panel-collapse -->
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#featurePermissionDetails" href="#featurePermissionDetailscollapseTwo">
+                          <h5 class="Quarion-Book text-purple mb-0">Managing offices and sessions</h5>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="featurePermissionDetailscollapseTwo" class="panel-collapse collapse">
+                      <div class="panel-body p-2">
+                        <!-- Managing offices and sessions -->
+                        <div class="row m-0 p-3 bg-offWhite">
+                          <div class="container mt-2 px-0">
+                            <div class="table-responsive table-hover mb-0">
+                              <table class="table table-striped table-sm">
+                                <thead class="text-uppercase text-gray">
+                                  <tr>
+                                    <th>Feature</th>
+                                    <th>Description</th>
+                                    <th>Actions</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      Can access Construction app
+                                    </td>
+                                    <td>
+                                      The user has access to the construction app.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Can create questions
+                                    </td>
+                                    <td>
+                                      The user can create questions in the construction module.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Can access Construction app
+                                    </td>
+                                    <td>
+                                      The user has access to the construction app.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Can create questions
+                                    </td>
+                                    <td>
+                                      The user can create questions in the Construction module.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- Managing offices and sessions -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- panel body ends here -->
+                    </div>
+                  </div>
+                  <!-- panel 2 ends here -->
+                  <!-- panel 2 starts here -->
+                  <div class="panel">
+                    <div class="panel-heading py-3">
+                      <h4 class="panel-title px-3 mb-0">
+                        <!-- to open the panel remove collapsed class from a tag and add show class to panel-collapse -->
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#featurePermissionDetails" href="#featurePermissionDetailscollapseThree">
+                          <h5 class="Quarion-Book text-purple mb-0">Managing the organization</h5>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="featurePermissionDetailscollapseThree" class="panel-collapse collapse">
+                      <div class="panel-body p-2">
+                        <!-- Managing the organization -->
+                        <div class="row m-0 p-3 bg-offWhite">
+                          <div class="container mt-2 px-0">
+                            <div class="table-responsive table-hover mb-0">
+                              <table class="table table-striped table-sm">
+                                <thead class="text-uppercase text-gray">
+                                  <tr>
+                                    <th>Feature</th>
+                                    <th>Description</th>
+                                    <th>Actions</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      Can access Construction app
+                                    </td>
+                                    <td>
+                                      The user has access to the construction app.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Can create questions
+                                    </td>
+                                    <td>
+                                      The user can create questions in the construction module.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Can access Construction app
+                                    </td>
+                                    <td>
+                                      The user has access to the construction app.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      Can create questions
+                                    </td>
+                                    <td>
+                                      The user can create questions in the Construction module.
+                                    </td>
+                                    <td>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-icon ml-3" data-toggle="modal" data-target="#unitEditModal"><span class="iconic iconic-pencil" title="pencil" aria-hidden="true"></span></button>
+                                      <button type="button" name="button" class="btn-sm customBtn customBtn-remove ml-3"><span class="iconic iconic-trash" title="trash" aria-hidden="true"></span></button>
+                                      <!-- feature enable / disable switch comes here -->
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- Managing the organization table ends here -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- panel body ends here -->
+                    </div>
+                  </div>
+                  <!-- panel 3 ends here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">© 2018 - YouCap. All Rights Reserved.</span>
+      </div>
+    </footer>
+
+    <!-- Add role modal -->
+    <div class="modal fade" id="addRole" tabindex="-1" role="dialog" aria-labelledby="addRoleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addRoleModalLabel">Add Role</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container mt-2 px-0">
+              <form class="row">
+                <div class="col-sm-12">
+                  <div class="form-group mb-3">
+                    <label for="roleName" class="Quarion-Book text-uppercase">Role</label>
+                    <input type="text" class="form-control" id="roleName" placeholder="Role name">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group w-100">
+                    <label for="roleDescription" class="Quarion-Book text-uppercase">Description</label>
+                    <textarea class="form-control" id="roleDescription" rows="2"></textarea>
+                  </div>
+                </div>
+                <!-- replace this with multi select for area selection -->
+                <div class="col-sm-12">
+                  <div class="form-group mb-3">
+                    <label for="examineeMultipleExams" class="Quarion-Book text-uppercase">Select area</label>
+                    <select class="form-control" id="examineeMultipleExams">
+                      <option>Constructing questions</option>
+                      <option>Managing offices and sessions</option>
+                      <option>Managing the organization</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-sm customBtn customBtn-purple">Create role</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add area same as the role modal change only the labels-->
+
+    <!-- Add feature modal -->
+    <div class="modal fade" id="addFeature" tabindex="-1" role="dialog" aria-labelledby="addFeatureModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addFeatureModalLabel">Add Feature</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container mt-2 px-0">
+              <form class="row">
+                <div class="col-sm-12">
+                  <div class="form-group mb-3">
+                    <label for="examineeMultipleExams" class="Quarion-Book text-uppercase">Select area</label>
+                    <select class="form-control" id="examineeMultipleExams">
+                      <option>Constructing questions</option>
+                      <option>Managing offices and sessions</option>
+                      <option>Managing the organization</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group mb-3">
+                    <label for="roleName" class="Quarion-Book text-uppercase">Feature</label>
+                    <input type="text" class="form-control" id="roleName" placeholder="Feature name">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group w-100">
+                    <label for="roleDescription" class="Quarion-Book text-uppercase">Description</label>
+                    <textarea class="form-control" id="roleDescription" rows="2"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn-sm customBtn customBtn-purple">Create feature</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+
+  </body>
+</html>
