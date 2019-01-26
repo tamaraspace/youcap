@@ -1,0 +1,32 @@
+// monitoring list custom Sass
+
+.timeline {
+  .border-right {
+    height: 3em;
+  }
+  .custom-icon {
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 1.5rem;
+    position: relative;
+    text-align: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: $dark-purple;
+    color: $light-purple;
+    top: -1.4em;
+    border: 2px solid $light-purple;
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  .activity-name-row {
+    margin-top: -2rem !important;
+  }
+  .rounded-bg-border {
+    border-radius: 1em;
+  }
+}

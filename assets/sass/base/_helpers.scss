@@ -62,10 +62,11 @@
 // custom shadows
 .box-shadow {
   // box-shadow: rgba(60, 64, 67, .04) 0 1px 2px 0, rgba(60, 64, 67, .1) 0 1px 3px 1px;
-  box-shadow: 0 1px 20px 0 rgba(202, 202, 205, 0.56);
+  // box-shadow: 0 1px 20px 0 rgba(202, 202, 205, 0.56);
+  box-shadow: 0 .2rem 1rem rgba(0,0,0,.15);
 }
 .box-shadow-purple {
-  box-shadow: 0 0.15rem 0.75rem 0.05rem rgba(161,130,195,0.75);
+  box-shadow: 0 7px 16px 0 rgba(161,130,195,0.3);
 }
 
 // custom text color
@@ -101,7 +102,10 @@
 
 // custom borders
 .border-purple {
-  border-color: $dark-purple;
+  border-color: $dark-purple !important;
+}
+.border-light-purple {
+  border: 2px solid $light-purple !important;
 }
 .border-error {
   border-color: $error;
